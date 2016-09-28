@@ -29,9 +29,9 @@ try {
     if($update->message->text == '/poto')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-    	$response = $client->sendMessage([
+    	$response = $client->sendPhoto([
         	'chat_id' => $update->message->chat->id,
-        	'text' => "poto"
+        	'photo' => "filesystem:https://web.telegram.org/temporary/426332132_27525_13051976632869504680.jpg"
      	]);
     }
     else if($update->message->text == '/help')
@@ -66,7 +66,7 @@ try {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => "Invalid command, please use /help to get list of available commands"
+    		'text' => $update->message->text
     		]);
     }
 
