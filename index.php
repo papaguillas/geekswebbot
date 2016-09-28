@@ -66,8 +66,9 @@ try {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => $update->message->text
+    		'text' => "oye"
     		]);
+	    echo $update->message;
     }
 
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
