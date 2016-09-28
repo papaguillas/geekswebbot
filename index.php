@@ -1,5 +1,4 @@
 <?php
-
 /*
 * This file is part of GeeksWeb Bot (GWB).
 *
@@ -18,20 +17,17 @@
 *
 */
 require 'vendor/autoload.php';
-
 $client = new Zelenin\Telegram\Bot\Api('281054296:AAF-1ZfScV2RpzgFDRaJAN5tck2VMz8Dv00'); // Set your access token
 $url = 'https://koreanbot.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));
-
 //your app
 try {
-
     if($update->message->text == '/poto')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-    	$response = $client->sendPhoto([
+    	$response = $client->sendMessage([
         	'chat_id' => $update->message->chat->id,
-        	'photo' => "filesystem:https://web.telegram.org/temporary/426332132_27525_13051976632869504680.jpg"
+        	'text' => "poto"
      	]);
     }
     else if($update->message->text == '/help')
@@ -42,7 +38,6 @@ try {
     		'text' => "List of commands :\n /email -> Get email address of the owner \n /latest -> Get latest posts of the blog 
     		/help -> Shows list of available commands"
     		]);
-
     }
     else if($update->message->text == '/latest')
     {
@@ -59,21 +54,16 @@ try {
 					'chat_id' => $update->message->chat->id,
 					'text' => $message
 				]);
-
     }
     else
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => "oye"
+    		'text' => "Invalid command, please use /help to get list of available commands"
     		]);
-	    echo $update->message;
     }
-
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
-
     //echo error message ot log it
     //echo $e->getMessage();
-
 }
