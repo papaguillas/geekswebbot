@@ -17,17 +17,17 @@
 *
 */
 require 'vendor/autoload.php';
-$client = new Zelenin\Telegram\Bot\Api('281054296:AAF-1ZfScV2RpzgFDRaJAN5tck2VMz8Dv00'); // Set your access token
-$url = 'https://koreanbot.herokuapp.com/'; // URL RSS feed
+$client = new Zelenin\Telegram\Bot\Api(''); // Set your access token
+$url = ''; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));
 //your app
 try {
-    if($update->message->text == '/poto')
+    if($update->message->text == '/email')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
         	'chat_id' => $update->message->chat->id,
-        	'text' => "poto"
+        	'text' => "You can send email to : Kasra@madadipouya.com"
      	]);
     }
     else if($update->message->text == '/help')
