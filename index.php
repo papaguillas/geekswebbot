@@ -25,9 +25,10 @@ try {
     if($update->message->text == '/email')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-    	$response = $client->sendMessage([
+	
+    	$response = $client->sendPhoto([
         	'chat_id' => $update->message->chat->id,
-        	'text' => "You can send email to : Kasra@madadipouya.com"
+        	'photo' => "JAJAJAJA.jpg"
      	]);
     }
     else if($update->message->text == '/help')
@@ -60,7 +61,7 @@ try {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => $update->message.photo[2].file_id
+    		'text' => $update->message->photo[2]->file_id
     		]);
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
