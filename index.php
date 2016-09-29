@@ -28,7 +28,8 @@ try {
 	
     	$response = $client->sendPhoto([
         	'chat_id' => $update->message->chat->id,
-        	'photo' => "JAJAJAJA.jpg"
+        	//'photo' => "JAJAJAJA.jpg"
+		'photo' => "AgADBAADn7sxG_6P5AGdxJEF4c87XE22ZxkABKduBRzVdIFhIooAAgI"
      	]);
     }
     else if($update->message->text == '/help')
