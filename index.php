@@ -61,7 +61,6 @@ try {
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
     		'text' => "Invalid command, please use /help to get list of available commands"
-		echo $update->message->text;
     		]);
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
