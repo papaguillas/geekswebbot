@@ -17,8 +17,8 @@
 *
 */
 require 'vendor/autoload.php';
-$client = new Zelenin\Telegram\Bot\Api('281054296:AAF-1ZfScV2RpzgFDRaJAN5tck2VMz8Dv00'); // Set your access token
-$url = 'https://koreanbot.herokuapp.com/'; // URL RSS feed
+$client = new Zelenin\Telegram\Bot\Api('297927337:AAHXURwcz2EK8rFMsssTn90t2iNLGTtJLMw'); // Set your access token
+$url = 'koreanbot.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));
 //your app
 try {
