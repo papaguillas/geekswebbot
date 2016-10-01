@@ -35,9 +35,6 @@ try {
     }
     else if($update->message->text == '/help')
     {
-	    if(is_null($current){
-	    $current = $date;    
-	    )
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
