@@ -36,10 +36,9 @@ try {
     else if($update->message->text == '/help')
     {
 	 $fichero = fopen("a.txt","r+");
-	  if(fread($fichero,filesize("a.txt") == 50){
 	 $txt = "poto";
 	 fwrite($fichero, $txt);
-	  }
+	  
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
