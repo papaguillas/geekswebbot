@@ -18,6 +18,7 @@
 */
 require 'vendor/autoload.php';
 $date = date('m/d/Y h:i:s a', time());
+$current = date(H:i);
 $client = new Zelenin\Telegram\Bot\Api('297927337:AAHXURwcz2EK8rFMsssTn90t2iNLGTtJLMw'); // Set your access token
 $url = 'koreanbot.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));	
@@ -35,9 +36,7 @@ try {
     }
     else if($update->message->text == '/help')
     {
-	   if(is_null($current)){
-	    $current = pepinillos;    
-	   }
+
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
