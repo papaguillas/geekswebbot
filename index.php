@@ -37,8 +37,9 @@ try {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => "List of commands :\n /email -> Get email address of the owner \n /latest -> Get latest posts of the blog 
-    		/help -> Shows list of available commands"
+		date_default_timezone_set('Spain/Madrid');
+		$date = date('m/d/Y h:i:s a', time());
+    		'text' => $date
     		]);
     }
     else if($update->message->text == '/latest')
