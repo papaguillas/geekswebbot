@@ -35,12 +35,13 @@ try {
     }
     else if($update->message->text == '/help')
     {
-
-	    	 $salida = "hola";
+	   if(is_null($current)){
+	    $current = pepinillos;    
+	   }
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => $salida
+    		'text' => $current
     		]);
     }
     else if($update->message->text == '/latest')
@@ -71,4 +72,3 @@ try {
     //echo error message ot log it
     //echo $e->getMessage();
 }
-
