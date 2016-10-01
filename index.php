@@ -39,12 +39,11 @@ try {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => $current
+    		'text' => "hostia"
     		]);
     }
     else if($update->message->text == '/latest')
     {
-	    $current = $date;
     		Feed::$cacheDir 	= __DIR__ . '/cache';
 			Feed::$cacheExpire 	= '5 hours';
 			$rss 		= Feed::loadRss($url);
