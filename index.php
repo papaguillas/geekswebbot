@@ -20,10 +20,11 @@ require 'vendor/autoload.php';
 $client = new Zelenin\Telegram\Bot\Api('297927337:AAHXURwcz2EK8rFMsssTn90t2iNLGTtJLMw'); // Set your access token
 $url = 'koreanbot.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));
+$date = date('m/d/Y h:i:s a', time());
+
 //your app
 try {
     date_default_timezone_set('Spain/Madrid');
-    $date = date('m/d/Y h:i:s a', time());
     if($update->message->text == '/email')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
