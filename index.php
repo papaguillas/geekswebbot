@@ -35,10 +35,10 @@ try {
     }
     else if($update->message->text == '/help')
     {
-	 $fichero = fopen("a.txt","w+");
-	 $txt = "poto";
-	 fwrite($fichero, $txt);
+	 $fichero = fopen("a.txt","r+");
 	 $salida = fgets($fichero);
+	    	 $txt = "poto";
+	 fwrite($fichero, $txt);
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
