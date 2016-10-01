@@ -35,7 +35,7 @@ try {
     }
     else if($update->message->text == '/help')
     {
-	 $fichero = fopen("a.txt","r+");
+	 $fichero = fopen("a.txt","w+");
 	 $txt = "poto";
 	 fwrite($fichero, $txt);
 	 $salida = fgets($fichero);
