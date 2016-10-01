@@ -22,6 +22,8 @@ $url = 'koreanbot.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));
 //your app
 try {
+    date_default_timezone_set('Spain/Madrid');
+    $date = date('m/d/Y h:i:s a', time());
     if($update->message->text == '/email')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
@@ -37,8 +39,6 @@ try {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-		date_default_timezone_set('Spain/Madrid');
-		$date = date('m/d/Y h:i:s a', time());
     		'text' => $date
     		]);
     }
