@@ -18,7 +18,6 @@
 */
 require 'vendor/autoload.php';
 $date = date('m/d/Y h:i:s a', time());
-while(1){
 $client = new Zelenin\Telegram\Bot\Api('297927337:AAHXURwcz2EK8rFMsssTn90t2iNLGTtJLMw'); // Set your access token
 $url = 'koreanbot.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));	
@@ -70,4 +69,4 @@ try {
     //echo error message ot log it
     //echo $e->getMessage();
 }
-}
+
