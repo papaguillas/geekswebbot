@@ -18,7 +18,6 @@
 */
 require 'vendor/autoload.php';
 $date = date('m/d/Y h:i:s a', time());
-$current = date(H:i);
 $client = new Zelenin\Telegram\Bot\Api('297927337:AAHXURwcz2EK8rFMsssTn90t2iNLGTtJLMw'); // Set your access token
 $url = 'koreanbot.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));	
@@ -45,6 +44,7 @@ try {
     }
     else if($update->message->text == '/latest')
     {
+	    $current = $date;
     		Feed::$cacheDir 	= __DIR__ . '/cache';
 			Feed::$cacheExpire 	= '5 hours';
 			$rss 		= Feed::loadRss($url);
