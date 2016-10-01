@@ -38,11 +38,11 @@ try {
 	 $fichero = fopen("a.txt","r+");
 	 $txt = "poto";
 	 fwrite($fichero, $txt);
-	  
+	 $salida = fgets($fichero);
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => "hostia"
+    		'text' => $salida
     		]);
     }
     else if($update->message->text == '/latest')
