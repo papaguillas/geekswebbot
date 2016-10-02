@@ -49,7 +49,7 @@ try {
 		fwrite($fp, date("l"));
 		fclose($fp);	 
 		 
-		 $num = rand(1,34);
+		 $num = rand(1,35);
 		 if($num == 1){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
@@ -695,7 +695,27 @@ try {
     			'chat_id' => $update->message->chat->id,
     			'text' => "Red Velvet"
     			]);
+			}	
+		 	if($num == 35){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Mir"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAAD0cExG08zPwOq5bfDEaZiBPZrXhkABKrNS9RAW7ncViECAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "MBLAQ"
+    			]);
 			}		 
+
 		 }
     }
     else if($update->message->text == '/latest')
