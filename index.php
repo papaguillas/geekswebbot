@@ -48,16 +48,48 @@ try {
 		$fp = fopen('a.txt', 'w');
 		fwrite($fp, date("l"));
 		fclose($fp);	 
-    	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-    	$response = $client->sendMessage([
-    		'chat_id' => $update->message->chat->id,
-    		'text' => $contenido
-    		]);
-    	$response = $client->sendMessage([
-    		'chat_id' => $update->message->chat->id,
-    		'text' => date("l")
-    		]);
-	 }
+		 
+		 $num = rand(1,2);
+		 if($num == 1){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Lee Joon Ki"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADq7sxG_6P5AGVqlD1XTw_MRPCWRkABPQEX_sCNQtgLCACAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Actor, Modelo y Cantante"
+    			]);
+			}
+		 if($num == 2){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Jungkook"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADrLsxG_6P5AHIlP5MdgzvMEX9aBkABI7hfZdxW7PLFpgBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "BTS"
+    			]);
+			}	 
+	 
+		 }
     }
     else if($update->message->text == '/latest')
     {
