@@ -88,6 +88,519 @@ try {
     			'text' => "BTS"
     			]);
 			}	 
+		 if($num == 3){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Kim Hyun Joong"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADrbsxG_6P5AEoDxoDavDoecFLXhkABFM7jhwoqyrF8B4CAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "SS501 (inactivo :(  )"
+    			]);
+			}	 
+		 if($num == 4){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Arin"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADrrsxG_6P5AHegPks0U8HVOKVXhkABGMY50rOhyiwxR8CAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "OH MY GIRL"
+    			]);
+			}	 
+		 if($num == 5){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Black J (Bong Jun)"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADr7sxG_6P5AEX5yST74e4EcpIaRkABAabiS2IWZpUxIUAAgI"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "N.SONIC"
+    			]);
+			}	 
+		 if($num == 6){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Ahn Jung Yoon"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADsLsxG_6P5AFuyaldeiS-cFd7XhkABLRnywzS2NMI_R8CAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "I-13 (Disuelto :(  )"
+    			]);
+			}	 
+		 if($num == 7){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Lee Min Ho"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADsbsxG_6P5AFrJeZ75gsVs0fkZRkABNv4w3pttJ_7l5MBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Este tio hace de todo. Para mas info http://es.drama.wikia.com/wiki/Lee_Min_Ho"
+    			]);
+			}	 
+		 if($num == 8){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Bobby"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADsrsxG_6P5AHArxwOP6ojBcnrZxkABHrxSYsVfngS1JUBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "iKON"
+    			]);
+			}	 
+		 if($num == 9){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "PSY"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADs7sxG_6P5AFDu886EUdgjHhtXhkABKfeATnOON--gh8CAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Solista"
+    			]);
+			}	 
+		 if($num == 10){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Choi Min Ho"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADtLsxG_6P5AEFYGMjjLW5vTO3XhkABIrBw0DbWnTl_x0CAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "SHINee"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Mark Tuan"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADtrsxG_6P5AEz2Nh0HqI5cyeKZxkABB1024wPwaG1z4QAAgI"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "GOT7"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "JB"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADuLsxG_6P5AHGZ63pJJ7nElr9WRkABIgojzSzq7bfaB8CAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "GOT7"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Jackson"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADubsxG_6P5AHrH3Hl8By7aXcLZhkABEMtKAomH1i98psBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "GOT7"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Young Jae"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADursxG_6P5AEAAXBayU-wS_LLLWYZAATcSknrJffzZ4eaAQABAg"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "GOT7"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "BamBam"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADu7sxG_6P5AFxjBQktSHVXBF5ZxkABDyaNEZt71-qe5MBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "GOT7"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Kim Yu Gyeom"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADvLsxG_6P5AGbZ1yYvyIyJpIJWhkABIfeIXmQ1Z-UrB4CAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "GOT7"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Xiu Min"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADvbsxG_6P5AGPtupoluAvXznaZRkABMqXteHpgEAQFJwBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "EXO"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Suho"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADvrsxG_6P5AEFhU5GzJSEglVrXhkABKeA2nsvj1B2ah8CAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "EXO"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Lay (como las patatas ajaj xd)"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADv7sxG_6P5AFjq5rtdNx1U6kOZhkABEhiuzk1PdnhipQBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "EXO"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Henry"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADwLsxG_6P5AERJZzfbbBxj4j8ZRkABO59_5si_BuNx5kBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Super Junior"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Zhuo Mi"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADwbsxG_6P5AFJQdAynJsiwxqSWBkABCCN0e2pZbiVYxwCAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Super Junior"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Cho Kyu Hyun"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADwrsxG_6P5AF5bFHm1geW5BZYaRkABDSOa-9PU9V5TIUAAgI"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Super Junior"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "S.Coups"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADxbsxG_6P5AEJ3X443IrOh9B8ZxkABPEu_pjoVaaqhpUBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Seventeen"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Jeong Han"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADx7sxG_6P5AFT44T6o22fKtV_ZxkABN3TuJvydcL57oQAAgI"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Seventeen"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Joshua"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADyLsxG_6P5AGzX0xnGjbrNZwMZhkABNkJmg5mMr0YYZIBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Seventeen"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Jun"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADy7sxG_6P5AHuK6_Bd4hRL5-RWBkABGjdGWQh9vAAAXkdAgABAg"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Seventeen"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Won Woo"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADzbsxG_6P5AEoZDvnoc--aBMPYBkABNRg2CgXXutLSiACAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Seventeen"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "The8"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADzrsxG_6P5AFtiYAe57UgGjikZxkABItFpGFiBGhlbpUBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Seventeen"
+    			]);
+			}	 
+		 if($num == ){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Vernom"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADz7sxG_6P5AFim01WW5u_xDo7aRkABAZKHKJ8SD6NF4cAAgI"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Seventeen"
+    			]);
+			}	 
 	 
 		 }
     }
