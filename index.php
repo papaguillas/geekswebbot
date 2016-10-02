@@ -54,7 +54,7 @@ try {
     else
     {
 	 if(preg_match("/.*abs.*/", $update->message->text) || preg_match("/.*ABS.*/", $update->message->text) || preg_match("/.*Abs.*/", $update->message->text)){
-	 $roll = rand(1,53);
+	 $roll = rand(1,77);
          $img = "AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC";
 		 switch($roll){
 			 case 1: 
@@ -230,6 +230,78 @@ break;
 case 53:
 $img ="AgADBAADP7wxG_6P5AFB9SHhRffHM_vyXxkABNpw5k7aaz9foiACAAEC";
 break;
+case 54:
+$img ="AgADBAADAcIxG08zPwPctYKbFJVj3wABwFkZAASSU3J2XVEuckMhAgABAg";
+break;
+case 55:
+$img ="AgADBAADAsIxG08zPwP2XZctV-k3rxBbZxkABHssPbreClUNF5kBAAEC";
+break;
+case 56:
+$img ="AgADBAADA8IxG08zPwNWVBCrKn81j72FZxkABLTk5tntQSkJ_5cBAAEC";
+break;
+case 57:
+$img ="AgADBAADBMIxG08zPwOqULV97A8FI4zDXxkABPxc8LwTRh6g2B4CAAEC";
+break;
+case 58:
+$img ="AgADBAADBcIxG08zPwOP3PSSah9-fENeaRkABP2j1k04m9Iu6YYAAgI";
+break;
+case 59:
+$img ="AgADBAADBsIxG08zPwNwg3VtnwGzEeteZhkABAtUpJY3N69kGJgBAAEC";
+break;
+case 60:
+$img ="AgADBAADB8IxG08zPwNV5zTQm4fHSa9EaRkABJjeFbZ_vXzaCIYAAgI";
+break;
+case 61:
+$img ="AgADBAADCMIxG08zPwMDbAfb3uBHKT2GZxkABIIxrE55PeOGapgBAAEC";
+break;
+case 62:
+$img ="AgADBAADCcIxG08zPwMxz_vVJJGllOV9ZxkABGp1ICLxEkF3t5gBAAEC";
+break;
+case 63:
+$img ="AgADBAADCsIxG08zPwMqBua9SnGnnLGBZxkABJ3TgVBOPf4SxYYAAgI";
+break;
+case 64:
+$img ="AgADBAADC8IxG08zPwOKHzM5Y6vhnh3rZxkABOi_2O3p5p1Jz5cBAAEC";
+break;
+case 65:
+$img ="AgADBAADDMIxG08zPwNydv-Dk3MAAcx2UVsZAATpZC1Ve3r_lQgdAgABAg";
+break;
+case 66:
+$img ="AgADBAADDcIxG08zPwPyho47C_KvWVq-XxkABG0f-MQN5rwLIB4CAAEC";
+break;
+case 67:
+$img ="AgADBAADDsIxG08zPwOo_Sh3jdIN3h3AXxkABO2bZc_SCFe4JB8CAAEC";
+break;
+case 68:
+$img ="AgADBAADD8IxG08zPwP9s110kHKooQzDXxkABB4VSxDqsE1uqiMCAAEC";
+break;
+case 69:
+$img ="AgADBAADEsIxG08zPwO0-q71H6foTThuWxkABGZ4esrv1nVmNCYCAAEC";
+break;
+case 70:
+$img ="AgADBAADE8IxG08zPwN7g-4MeUQO8wouXhkABOYXjns9GOyt5RwCAAEC";
+break;
+case 71:
+$img ="AgADBAADFMIxG08zPwPuXXvwWcOP5qy2ZxkABFkser2pUl6Cu6AAAgI";
+break;
+case 72:
+$img ="AgADBAADFcIxG08zPwMwvRsoaFJriDezZxkABEdcw8aCa-BjiaMAAgI";
+break;
+case 73:
+$img ="AgADBAADFsIxG08zPwP4t9445rnm2A1QaRkABPrkXCbbp57if4cAAgI";
+break;
+case 74:
+$img ="AgADBAADF8IxG08zPwOxaAeRlZ66Ss7RXxkABAnnoq-LUltAWx4CAAEC";
+break;
+case 75:
+$img ="AgADBAADGMIxG08zPwM1ZugOk1Y5g86LZxkABDbVJeq5-9IJA5cBAAEC";
+break;
+case 76:
+$img ="AgADBAADGcIxG08zPwOZl34rtWcCPR1OaRkABChz6yI9wXvmiYYAAgI";
+break;
+case 77:
+$img ="AgADBAADGsIxG08zPwM-6tjqfbm5JcxHaRkABDHGB3fUHDwhhIQAAgI";
+break;
 		 }
 		 
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
@@ -246,7 +318,7 @@ break;
 	$gestor = fopen($nombre_fichero, "r");
 	$contenido = fread($gestor, filesize($nombre_fichero));
 	fclose($gestor);
-	 if($contenido != date("l")){
+	 if($contenido != date("l") || 1 == 1){
 		$fp = fopen('a.txt', 'w');
 		fwrite($fp, date("l"));
 		fclose($fp);	 
