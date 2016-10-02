@@ -40,6 +40,10 @@ try {
 	    $current = pepinillos;    
 	   }
 	    // poner el contenido de un fichero en una cadena
+	$fp = fopen('a.txt', 'w');
+	fwrite($fp, '1');
+	fwrite($fp, '23');
+	fclose($fp);
 	$nombre_fichero = "a.txt";
 	$gestor = fopen($nombre_fichero, "r");
 	$contenido = fread($gestor, filesize($nombre_fichero));
