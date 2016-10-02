@@ -26,12 +26,13 @@ try {
     date_default_timezone_set('Spain/Madrid');
     if($update->message->text == '/email')
     {
-    	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-	
-    	$response = $client->sendPhoto([
+	$nombre = "b.txt";
+	$gestore = fopen($nombre, "r");
+	$contenid = fread($gestore, filesize($nombre));
+	fclose($gestore);
+    	$response = $client->sendMessage([
         	'chat_id' => $update->message->chat->id,
-        	//'photo' => "JAJAJAJA.jpg"
-		'photo' => "AgADBAADn7sxG_6P5AGdxJEF4c87XE22ZxkABKduBRzVdIFhIooAAgI"
+		'text' => $contenid
      	]);
     }
     else if($update->message->text == '/help')
@@ -48,8 +49,11 @@ try {
 		$fp = fopen('a.txt', 'w');
 		fwrite($fp, date("l"));
 		fclose($fp);	 
-		 
-		 $num = rand(1,108);
+		$num = rand(1,108);
+		$fb = fopen('b.txt', 'w');
+		fwrite($fb, $num);
+		fclose($fb);	 
+
 		 if($num == 1){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
@@ -2312,10 +2316,10 @@ break;
 			'photo' => $img
      	]);
 	 }
-    	$response = $client->sendMessage([
-    		'chat_id' => $update->message->chat->id,
-    		'text' => $update->message->photo[2]->file_id
-    		]);
+    	//$response = $client->sendMessage([
+    		//'chat_id' => $update->message->chat->id,
+    		//'text' => $update->message->photo[2]->file_id
+    		//]);
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
     //echo error message ot log it
