@@ -17,6 +17,7 @@
 *
 */
 require 'vendor/autoload.php';
+
 $date = date('m/d/Y h:i:s a', time());
 $client = new Zelenin\Telegram\Bot\Api('297927337:AAHXURwcz2EK8rFMsssTn90t2iNLGTtJLMw'); // Set your access token
 $url = 'koreanbot.herokuapp.com/'; // URL RSS feed
@@ -38,10 +39,15 @@ try {
 	   if(is_null($current)){
 	    $current = pepinillos;    
 	   }
+	    // poner el contenido de un fichero en una cadena
+	$nombre_fichero = "a.txt";
+	$gestor = fopen($nombre_fichero, "r");
+	$contenido = fread($gestor, filesize($nombre_fichero));
+	fclose($gestor);
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => $current
+    		'text' => $contenido
     		]);
     }
     else if($update->message->text == '/latest')
