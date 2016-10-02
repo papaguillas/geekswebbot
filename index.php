@@ -50,7 +50,7 @@ try {
 		fwrite($fp, date("l"));
 		fclose($fp);	 
 		$num = rand(1,108);
-		$fb = fopen('b.txt', 'w');
+		$fb = fopen('b.txt', 'a');
 		fwrite($fb, $num);
 		fclose($fb);	 
 
