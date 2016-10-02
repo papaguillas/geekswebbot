@@ -717,6 +717,150 @@ try {
     else
     {
 	 if(preg_match("/.*abs.*/", $update->message->text)){
+	 $roll = rand(1,100);
+         $img = AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC;
+		 switch($roll){
+			 case 1: 
+				 $img = AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC;
+				 break;
+			 case : 
+				 $img = AgADBAAD1bsxG_6P5AEAAQw1CuGA6ZqBmF4ZAAT8O_wgMzVUFnAcAgABAg;
+				break;
+			case : 
+				 $img = AgADBAAD1rsxG_6P5AGg_EgHwQABt7VjCmYZAAReDUSpl6RuqoWUAQABAg;
+				break;
+			case : 
+				 $img = AgADBAADHLcxG08zPwO6MVMyccCR098pGxkABO3jPy9zdsqBLMYAAgI
+				break;
+			case : 
+				 $img = AgADBAAD88gxG5zjYQABEDN-Xnup3GFZb1sZAASxaBWXdW9ic-ohAgABAg
+				break;
+			case : 
+				 $img =AgADBAAD9MgxG5zjYQABs0uaeD2W8DGcqV4ZAATNNNuXZddyyXwhAgABAg
+				break;
+			case : 
+				 $img =AgADBAAD17sxG_6P5AFN36yzRxamWWgGaRkABKDWvvpLqNHZ85sBAAEC
+				break;
+			case : 
+				 $img =AgADBAAD2bsxG_6P5AFCdv8JV-pbG0fZaBkABEVLdIbSBskCAAGUAQABAg
+				break;
+			case : 
+				 $img =AgADBAAD2rsxG_6P5AGxsk5LCPr109byaBkABORdUGnzedauFZUBAAEC
+				break;
+			case : 
+				 $img =AgADBAAD27sxG_6P5AER60o_DSrIwDRmZxkABM2dcly6MfZiDJUBAAEC
+				break;
+			case : 
+				 $img =AgADBAAD3LsxG_6P5AHM8y_-aSGOYMJRWxkABF6E7BPjUMiJ8hwCAAEC
+				break;
+			case : 
+				 $img =AgADBAAD3bsxG_6P5AEb5XRr-CnslbFjZxkABL4OrGyNZhKR9JsBAAEC
+				break;
+			case : 
+				 $img =AgADBAAD3rsxG_6P5AGdmHjTSApImMHCWRkABFk1Owi7UsWaViMCAAEC
+				break;
+			case : 
+				 $img =AgADBAAD37sxG_6P5AHyEtnWLmqbrsMiYBkABBvNZbyoFBe-AAEkAgABAg
+				break;
+			case : 
+				 $img =AgADBAAD4LsxG_6P5AEwbugMq1-hhcALZhkABJPVbQ2uEVWRK5gBAAEC
+				break;
+			case : 
+				 $img = AgADBAAD4bsxG_6P5AF-TR_fbq9XYz8waRkABKffsjFpd08uZZgBAAEC
+				break;
+			case : 
+				 $img =AgADBAAD4rsxG_6P5AEDUxfLZwgO-cLYZRkABAbNkLZeTaNbAAGWAQABAg
+				break;
+			case : 
+				 $img =AgADBAAD5LsxG_6P5AEBvqJ8RvY5_p0DYBkABJLaa--_wGxFXx0CAAEC
+				break;
+			case : 
+				 $img =AgADBAAD5bsxG_6P5AF9GjgFCqOOfqIfWxkABKxuWMA82TZIjCACAAEC
+				break;
+			case : 
+				 $img =AgADBAAD5rsxG_6P5AFkBhdGpWIZXJamZxkABCLzDtYeTKGy75cBAAEC
+				break;
+			case : 
+				 $img =AgADBAAD57sxG_6P5AHtJXhYexwMncAUWhkABCqrAAEki62VBYgZAgABAg
+				break;
+			case : 
+				 $img =AgADBAAD6LsxG_6P5AHEhAi_oNEigEfnZxkABPEeFU7xLcYbWIgAAgI
+				break;
+			case : 
+				 $img =AgADBAAD7bsxG_6P5AH1owOFRKW1_iPZZRkABHrrZ1ziFI8s_JcBAAEC
+				break;
+			case : 
+				 $img =AgADBAAD7LsxG_6P5AFFXq21bnhPkJoDZhkABPX4yNxScMZqdpkBAAEC
+				break;
+			case : 
+				 $img =AgADBAAD67sxG_6P5AENqbt5z_sR_5xmZxkABBF0CVuS-OPLI5gBAAEC
+				break;
+			case : 
+				 $img =AgADBAAD6rsxG_6P5AECzltUtPiv4hoTWhkABPaAhey4jYdxXB8CAAEC
+				break;
+			case : 
+				 $img =AgADBAAD6bsxG_6P5AH_MaPR5DlCzgouXhkABJa919QP8w8iORsCAAEC
+				break;
+					 
+			case : 
+				 $img =AgADBAAD7rsxG_6P5AFhe7_Qu-kRX2JqaRkABF5R-41zlAPw6YQAAgI
+				break;
+					 
+			case : 
+				 $img =AgADBAAD77sxG_6P5AGks2awaAyAlPlmZxkABG3Aex8YQOd-y5kBAAEC
+				break;
+					 
+			case : 
+				 $img =AgADBAAD8LsxG_6P5AHHXI3m6iq6kjrkZRkABHwQNL25AtpXjZQBAAEC
+				break;
+					 
+			case : 
+				 $img =AgADBAAD8bsxG_6P5AGodgNIRNRLaqb9ZRkABJHRJUNVMsPFmpUBAAEC
+				break;
+					 
+			case : 
+				 $img =AgADBAAD8rsxG_6P5AENkBKVNNTMul1sXhkABOOuBoyabiC0oh4CAAEC
+				break;
+					 
+			case : 
+				 $img =AgADBAAD9LsxG_6P5AHeQM7Pbigjc5kgWxkABAF_ilwAAaGgNqIhAgABAg
+				break;
+					 
+			case : 
+				 $img =AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC
+				break;
+					 
+			case : 
+				 $img =AgADBAAD4rsxG_6P5AEDUxfLZwgO-cLYZRkABAbNkLZeTaNbAAGWAQABAg
+				break;
+					 
+			case : 
+				 $img =AgADBAAD9bsxG_6P5AFIhBxT8CAXw00OZhkABIKc8_fyGcsDvJUBAAEC
+				break;
+					 
+			case : 
+				 $img =AgADBAAD9rsxG_6P5AEwLaXJvOI53P4MZhkABKEEInD469qkq5YBAAEC
+				break;
+					 
+			case : 
+				 $img =AgADBAAD97sxG_6P5AFEGxJVWA2E_0hFaRkABJuWg_IdT3ujOogAAgI
+				break;
+					 
+			case : 
+				 $img =AgADBAAD-LsxG_6P5AFBWZcciSi8OKkuXhkABEbJ1nAx0Y5kZCICAAEC
+				break;
+					 
+			case : 
+				 $img =AgADBAAD-rsxG_6P5AHelRIzrdUo79wPYBkABDvRfQNOmG2kNCACAAEC
+				break;
+					 
+			case : 
+				 $img =AgADBAAD-bsxG_6P5AFJmSiCu0w3xN6dWxkABPZaWBnqpkFyNB8CAAEC
+				break;
+					 
+							 
+		 }
+		 
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
@@ -727,10 +871,10 @@ try {
 			'photo' => "AgADBAADAqgxG307iw2D1gOB2_L2XbymZxkABAnVzC-R8ES5fpcBAAEC"
      	]);
 	 }
-    	$response = $client->sendMessage([
-    		'chat_id' => $update->message->chat->id,
-    		'text' => $update->message->photo[2]->file_id
-    		]);
+    	//$response = $client->sendMessage([
+    		//'chat_id' => $update->message->chat->id,
+    		//'text' => $update->message->photo[2]->file_id
+    		//]);
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
     //echo error message ot log it
