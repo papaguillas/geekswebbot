@@ -44,12 +44,12 @@ try {
 	$gestor = fopen($nombre_fichero, "r");
 	$contenido = fread($gestor, filesize($nombre_fichero));
 	fclose($gestor);
-	 if($contenido != date("l")){
+	 if(1 == 1){
 		$fp = fopen('a.txt', 'w');
 		fwrite($fp, date("l"));
 		fclose($fp);	 
 		 
-		 $num = rand(1,2);
+		 $num = rand(1,34);
 		 if($num == 1){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
@@ -240,7 +240,7 @@ try {
     			'text' => "SHINee"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 11){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -259,7 +259,7 @@ try {
     			'text' => "GOT7"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 12){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -278,7 +278,7 @@ try {
     			'text' => "GOT7"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 13){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -297,7 +297,7 @@ try {
     			'text' => "GOT7"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 14){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -316,7 +316,7 @@ try {
     			'text' => "GOT7"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 15){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -335,7 +335,7 @@ try {
     			'text' => "GOT7"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 16){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -354,7 +354,7 @@ try {
     			'text' => "GOT7"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 17){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -373,7 +373,7 @@ try {
     			'text' => "EXO"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 18){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -392,7 +392,7 @@ try {
     			'text' => "EXO"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 19){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -411,7 +411,7 @@ try {
     			'text' => "EXO"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 20){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -430,7 +430,7 @@ try {
     			'text' => "Super Junior"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 21){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -449,7 +449,7 @@ try {
     			'text' => "Super Junior"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 22){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -468,7 +468,7 @@ try {
     			'text' => "Super Junior"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 23){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -487,7 +487,7 @@ try {
     			'text' => "Seventeen"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 24){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -506,7 +506,7 @@ try {
     			'text' => "Seventeen"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 25){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -525,7 +525,7 @@ try {
     			'text' => "Seventeen"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 26){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -544,7 +544,7 @@ try {
     			'text' => "Seventeen"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 27){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -563,7 +563,7 @@ try {
     			'text' => "Seventeen"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 28){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -582,7 +582,7 @@ try {
     			'text' => "Seventeen"
     			]);
 			}	 
-		 if($num == ){
+		 if($num == 29){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
     			'chat_id' => $update->message->chat->id,
@@ -601,7 +601,101 @@ try {
     			'text' => "Seventeen"
     			]);
 			}	 
-	 
+		 if($num == 30){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Irene"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAAD0LsxG_6P5AEg6RGc-GzJtCX8aBkABMI6m-tyquo0OpcBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Red Velvet"
+    			]);
+			}
+		 if($num == 31){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Seul Gi"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAAD0bsxG_6P5AG2IUx3S--zTcaCZxkABEx1oBDD0T63C5oBAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Red Velvet"
+    			]);
+			}
+		 if($num == 32){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Wendy"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAAD0rsxG_6P5AHX1EAOlKoppKmyXxkABDH28pS8vMaxsB8CAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Red Velvet"
+    			]);
+			}
+		 if($num == 33){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Joy"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAAD07sxG_6P5AHSSJQcmDHqfEM7XhkABPyrBVxapJouMxsCAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Red Velvet"
+    			]);
+			}
+		 if($num == 34){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "El idol del dia es..."
+    			]);
+    			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Yeri"
+    			]);
+			$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAAD1LsxG_6P5AHn3d_n9QVMTVi0XxkABF_SzBU7vb-mYhoCAAEC"
+     			]);
+			$response = $client->sendMessage([
+    			'chat_id' => $update->message->chat->id,
+    			'text' => "Red Velvet"
+    			]);
+			}		 
 		 }
     }
     else if($update->message->text == '/latest')
