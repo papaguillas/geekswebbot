@@ -24,7 +24,7 @@ $url = 'koreanbot.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));	
 try {
     date_default_timezone_set('Spain/Madrid');
-    if($update->message->text == '/email')
+    if($update->message->text == '/bisarro')
     {
 	$nombre = "b.txt";
 	$gestore = fopen($nombre, "r");
@@ -35,21 +35,222 @@ try {
 		'text' => $contenid
      	]);
     }
-    else if($update->message->text == '/help')
+    else if($update->message->text == '/latggdshsgsdgasgaest')
     {
-	   if(is_null($current)){
-	    $current = pepinillos;    
-	   }
-	    // poner el contenido de un fichero en una cadena
+    		Feed::$cacheDir 	= __DIR__ . '/cache';
+			Feed::$cacheExpire 	= '5 hours';
+			$rss 		= Feed::loadRss($url);
+			$items 		= $rss->item;
+			$lastitem 	= $items[0];
+			$lastlink 	= $lastitem->link;
+			$lasttitle 	= $lastitem->title;
+			$message = $lasttitle . " \n ". $lastlink;
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+			$response = $client->sendMessage([
+					'chat_id' => $update->message->chat->id,
+					'text' => $message
+				]);
+    }
+    else
+    {
+	 if(preg_match("/.*abs.*/", $update->message->text) || preg_match("/.*ABS.*/", $update->message->text) || preg_match("/.*Abs.*/", $update->message->text)){
+	 $roll = rand(1,53);
+         $img = "AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC";
+		 switch($roll){
+			 case 1: 
+				 $img = "AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC";
+				 break;
+			 case 2: 
+				 $img = "AgADBAAD1bsxG_6P5AEAAQw1CuGA6ZqBmF4ZAAT8O_wgMzVUFnAcAgABAg";
+				break;
+			case 3: 
+				 $img = "AgADBAAD1rsxG_6P5AGg_EgHwQABt7VjCmYZAAReDUSpl6RuqoWUAQABAg";
+				break;
+			case 4: 
+				 $img = "AgADBAADHLcxG08zPwO6MVMyccCR098pGxkABO3jPy9zdsqBLMYAAgI";
+				break;
+			case 5: 
+				 $img = "AgADBAAD88gxG5zjYQABEDN-Xnup3GFZb1sZAASxaBWXdW9ic-ohAgABAg";
+				break;
+			case 6: 
+				 $img = "AgADBAAD9MgxG5zjYQABs0uaeD2W8DGcqV4ZAATNNNuXZddyyXwhAgABAg";
+				break;
+			case 7: 
+				 $img = "AgADBAAD17sxG_6P5AFN36yzRxamWWgGaRkABKDWvvpLqNHZ85sBAAEC";
+				break;
+			case 8: 
+				 $img = "AgADBAAD2bsxG_6P5AFCdv8JV-pbG0fZaBkABEVLdIbSBskCAAGUAQABAg";
+				break;
+			case 9: 
+				 $img = "AgADBAAD2rsxG_6P5AGxsk5LCPr109byaBkABORdUGnzedauFZUBAAEC";
+				break;
+			case 10: 
+				 $img = "AgADBAAD27sxG_6P5AER60o_DSrIwDRmZxkABM2dcly6MfZiDJUBAAEC";
+				break;
+			case 11: 
+				 $img = "AgADBAAD3LsxG_6P5AHM8y_-aSGOYMJRWxkABF6E7BPjUMiJ8hwCAAEC";
+				break;
+			case 12: 
+				 $img = "AgADBAAD3bsxG_6P5AEb5XRr-CnslbFjZxkABL4OrGyNZhKR9JsBAAEC";
+				break;
+			case 13: 
+				 $img = "AgADBAAD3rsxG_6P5AGdmHjTSApImMHCWRkABFk1Owi7UsWaViMCAAEC";
+				break;
+			case 14: 
+				 $img = "AgADBAAD37sxG_6P5AHyEtnWLmqbrsMiYBkABBvNZbyoFBe-AAEkAgABAg";
+				break;
+			case 15: 
+				 $img = "AgADBAAD4LsxG_6P5AEwbugMq1-hhcALZhkABJPVbQ2uEVWRK5gBAAEC";
+				break;
+			case 16: 
+				 $img = "AgADBAAD4bsxG_6P5AF-TR_fbq9XYz8waRkABKffsjFpd08uZZgBAAEC";
+				break;
+			case 17: 
+				 $img = "AgADBAAD4rsxG_6P5AEDUxfLZwgO-cLYZRkABAbNkLZeTaNbAAGWAQABAg";
+				break;
+			case 18 : 
+				 $img = "AgADBAAD5LsxG_6P5AEBvqJ8RvY5_p0DYBkABJLaa--_wGxFXx0CAAEC";
+				break;
+			case 19: 
+				 $img = "AgADBAAD5bsxG_6P5AF9GjgFCqOOfqIfWxkABKxuWMA82TZIjCACAAEC";
+				break;
+			case 20: 
+				 $img = "AgADBAAD5rsxG_6P5AFkBhdGpWIZXJamZxkABCLzDtYeTKGy75cBAAEC";
+				break;
+			case 21: 
+				 $img = "AgADBAAD57sxG_6P5AHtJXhYexwMncAUWhkABCqrAAEki62VBYgZAgABAg";
+				break;
+			case 22: 
+				 $img = "AgADBAAD6LsxG_6P5AHEhAi_oNEigEfnZxkABPEeFU7xLcYbWIgAAgI";
+				break;
+			case 23: 
+				 $img = "AgADBAAD7bsxG_6P5AH1owOFRKW1_iPZZRkABHrrZ1ziFI8s_JcBAAEC";
+				break;
+			case 24: 
+				 $img = "AgADBAAD7LsxG_6P5AFFXq21bnhPkJoDZhkABPX4yNxScMZqdpkBAAEC";
+				break;
+			case 25: 
+				 $img = "AgADBAAD67sxG_6P5AENqbt5z_sR_5xmZxkABBF0CVuS-OPLI5gBAAEC";
+				break;
+			case 26: 
+				 $img = "AgADBAAD6rsxG_6P5AECzltUtPiv4hoTWhkABPaAhey4jYdxXB8CAAEC";
+				break;
+			case 27: 
+				 $img = "AgADBAAD6bsxG_6P5AH_MaPR5DlCzgouXhkABJa919QP8w8iORsCAAEC";
+				break;
+					 
+			case 28: 
+				 $img = "AgADBAAD7rsxG_6P5AFhe7_Qu-kRX2JqaRkABF5R-41zlAPw6YQAAgI";
+				break;
+					 
+			case 29: 
+				 $img = "AgADBAAD77sxG_6P5AGks2awaAyAlPlmZxkABG3Aex8YQOd-y5kBAAEC";
+				break;
+					 
+			case 30: 
+				 $img = "AgADBAAD8LsxG_6P5AHHXI3m6iq6kjrkZRkABHwQNL25AtpXjZQBAAEC";
+				break;
+					 
+			case 31: 
+				 $img = "AgADBAAD8bsxG_6P5AGodgNIRNRLaqb9ZRkABJHRJUNVMsPFmpUBAAEC";
+				break;
+					 
+			case 32: 
+				 $img = "AgADBAAD8rsxG_6P5AENkBKVNNTMul1sXhkABOOuBoyabiC0oh4CAAEC";
+				break;
+					 
+			case 33: 
+				 $img = "AgADBAAD9LsxG_6P5AHeQM7Pbigjc5kgWxkABAF_ilwAAaGgNqIhAgABAg";
+				break;
+					 
+			case 34: 
+				 $img = "AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC";
+				break;
+					 
+			case 35: 
+				 $img = "AgADBAAD4rsxG_6P5AEDUxfLZwgO-cLYZRkABAbNkLZeTaNbAAGWAQABAg";
+				break;
+					 
+			case 36: 
+				 $img = "AgADBAAD9bsxG_6P5AFIhBxT8CAXw00OZhkABIKc8_fyGcsDvJUBAAEC";
+				break;
+					 
+			case 37: 
+				 $img = "AgADBAAD9rsxG_6P5AEwLaXJvOI53P4MZhkABKEEInD469qkq5YBAAEC";
+				break;
+					 
+			case 38: 
+				 $img = "AgADBAAD97sxG_6P5AFEGxJVWA2E_0hFaRkABJuWg_IdT3ujOogAAgI";
+				break;
+					 
+			case 39: 
+				 $img = "AgADBAAD-LsxG_6P5AFBWZcciSi8OKkuXhkABEbJ1nAx0Y5kZCICAAEC";
+				break;
+					 
+			case 40: 
+				 $img = "AgADBAAD-rsxG_6P5AHelRIzrdUo79wPYBkABDvRfQNOmG2kNCACAAEC";
+				break;
+					 
+			case 41: 
+				 $img ="AgADBAAD-bsxG_6P5AFJmSiCu0w3xN6dWxkABPZaWBnqpkFyNB8CAAEC";
+				break; 
+				 case 42:
+$img ="AgADBAADSrwxG_6P5AFYHR1uZP-UMC6KXhkABJazXuNYt7OCwCICAAEC";
+break;
+case 43:
+$img ="AgADBAADSbwxG_6P5AGredOsyOMWNGt9WBkABB8ZBdA1DGeXRCUCAAEC";
+break;
+case 44:
+$img ="AgADBAADSLwxG_6P5AGf_2b6n01fEBwAAWAZAASRM-SP2Tz9p6ojAgABAg";
+break;
+case 45:
+$img ="AgADBAADR7wxG_6P5AEDOOAjnUNZ-rVeaRkABG_nbUAu4LU-wokAAgI";
+break;
+case 46:
+$img ="AgADBAADRrwxG_6P5AH50XFBggjPG1PpWRkABF4GgyZOKlZHfCUCAAEC";
+break;
+case 47:
+$img ="AgADBAADObwxG_6P5AHyFP2BN4C_PinlZRkABD7GozL0hzER-JgBAAEC";
+break;
+case 48:
+$img ="AgADBAADOrwxG_6P5AEKuWeFXR3i0OFkZxkABNKZl6sobHkYR5YBAAEC";
+break;
+case 49:
+$img ="AgADBAADO7wxG_6P5AEJgCfIevlmwRvmWRkABL8a_6BYjijCSB8CAAEC";
+break;
+case 50:
+$img ="AgADBAADPLwxG_6P5AH3WOjRvysPb5QBYBkABM0ss3rUs2Aj4SACAAEC";
+break;
+case 51:
+$img ="AgADBAADPbwxG_6P5AFtNpreFz65UAmfWxkABF7C03LoB4Y69x0CAAEC";
+break;
+case 52:
+$img ="AgADBAADPrwxG_6P5AHzEownwtryLcQKZhkABE5ennZEYAL9oJsBAAEC";
+break;
+case 53:
+$img ="AgADBAADP7wxG_6P5AFB9SHhRffHM_vyXxkABNpw5k7aaz9foiACAAEC";
+break;
+		 }
+		 
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    	$response = $client->sendMessage([
+    		'chat_id' => $update->message->chat->id,
+    		'text' => "Alguien dijo abs?? ( ͡° ͜ʖ ͡°)"
+    		]);
+	$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => $img
+     	]);
+	 }
 	$nombre_fichero = "a.txt";
 	$gestor = fopen($nombre_fichero, "r");
 	$contenido = fread($gestor, filesize($nombre_fichero));
 	fclose($gestor);
-	 if(1 == 1){
+	 if($contenido != date("l")){
 		$fp = fopen('a.txt', 'w');
 		fwrite($fp, date("l"));
 		fclose($fp);	 
-		$num = rand(1,108);
+		$num = rand(1,139);
 		$fb = fopen('b.txt', 'a');
 		fwrite($fb, $num);
 		fwrite($fb, " ");
@@ -2107,216 +2308,599 @@ $response = $client->sendMessage([
 'text' => "A Pink"
 ]);
 }
-
-		 }
-    }
-    else if($update->message->text == '/latest')
-    {
-    		Feed::$cacheDir 	= __DIR__ . '/cache';
-			Feed::$cacheExpire 	= '5 hours';
-			$rss 		= Feed::loadRss($url);
-			$items 		= $rss->item;
-			$lastitem 	= $items[0];
-			$lastlink 	= $lastitem->link;
-			$lasttitle 	= $lastitem->title;
-			$message = $lasttitle . " \n ". $lastlink;
-			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-			$response = $client->sendMessage([
-					'chat_id' => $update->message->chat->id,
-					'text' => $message
-				]);
-    }
-    else
-    {
-	 if(preg_match("/.*abs.*/", $update->message->text) || preg_match("/.*ABS.*/", $update->message->text) || preg_match("/.*Abs.*/", $update->message->text)){
-	 $roll = rand(1,41);
-         $img = "AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC";
-		 switch($roll){
-			 case 1: 
-				 $img = "AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC";
-				 break;
-			 case 2: 
-				 $img = "AgADBAAD1bsxG_6P5AEAAQw1CuGA6ZqBmF4ZAAT8O_wgMzVUFnAcAgABAg";
-				break;
-			case 3: 
-				 $img = "AgADBAAD1rsxG_6P5AGg_EgHwQABt7VjCmYZAAReDUSpl6RuqoWUAQABAg";
-				break;
-			case 4: 
-				 $img = "AgADBAADHLcxG08zPwO6MVMyccCR098pGxkABO3jPy9zdsqBLMYAAgI";
-				break;
-			case 5: 
-				 $img = "AgADBAAD88gxG5zjYQABEDN-Xnup3GFZb1sZAASxaBWXdW9ic-ohAgABAg";
-				break;
-			case 6: 
-				 $img = "AgADBAAD9MgxG5zjYQABs0uaeD2W8DGcqV4ZAATNNNuXZddyyXwhAgABAg";
-				break;
-			case 7: 
-				 $img = "AgADBAAD17sxG_6P5AFN36yzRxamWWgGaRkABKDWvvpLqNHZ85sBAAEC";
-				break;
-			case 8: 
-				 $img = "AgADBAAD2bsxG_6P5AFCdv8JV-pbG0fZaBkABEVLdIbSBskCAAGUAQABAg";
-				break;
-			case 9: 
-				 $img = "AgADBAAD2rsxG_6P5AGxsk5LCPr109byaBkABORdUGnzedauFZUBAAEC";
-				break;
-			case 10: 
-				 $img = "AgADBAAD27sxG_6P5AER60o_DSrIwDRmZxkABM2dcly6MfZiDJUBAAEC";
-				break;
-			case 11: 
-				 $img = "AgADBAAD3LsxG_6P5AHM8y_-aSGOYMJRWxkABF6E7BPjUMiJ8hwCAAEC";
-				break;
-			case 12: 
-				 $img = "AgADBAAD3bsxG_6P5AEb5XRr-CnslbFjZxkABL4OrGyNZhKR9JsBAAEC";
-				break;
-			case 13: 
-				 $img = "AgADBAAD3rsxG_6P5AGdmHjTSApImMHCWRkABFk1Owi7UsWaViMCAAEC";
-				break;
-			case 14: 
-				 $img = "AgADBAAD37sxG_6P5AHyEtnWLmqbrsMiYBkABBvNZbyoFBe-AAEkAgABAg";
-				break;
-			case 15: 
-				 $img = "AgADBAAD4LsxG_6P5AEwbugMq1-hhcALZhkABJPVbQ2uEVWRK5gBAAEC";
-				break;
-			case 16: 
-				 $img = "AgADBAAD4bsxG_6P5AF-TR_fbq9XYz8waRkABKffsjFpd08uZZgBAAEC";
-				break;
-			case 17: 
-				 $img = "AgADBAAD4rsxG_6P5AEDUxfLZwgO-cLYZRkABAbNkLZeTaNbAAGWAQABAg";
-				break;
-			case 18 : 
-				 $img = "AgADBAAD5LsxG_6P5AEBvqJ8RvY5_p0DYBkABJLaa--_wGxFXx0CAAEC";
-				break;
-			case 19: 
-				 $img = "AgADBAAD5bsxG_6P5AF9GjgFCqOOfqIfWxkABKxuWMA82TZIjCACAAEC";
-				break;
-			case 20: 
-				 $img = "AgADBAAD5rsxG_6P5AFkBhdGpWIZXJamZxkABCLzDtYeTKGy75cBAAEC";
-				break;
-			case 21: 
-				 $img = "AgADBAAD57sxG_6P5AHtJXhYexwMncAUWhkABCqrAAEki62VBYgZAgABAg";
-				break;
-			case 22: 
-				 $img = "AgADBAAD6LsxG_6P5AHEhAi_oNEigEfnZxkABPEeFU7xLcYbWIgAAgI";
-				break;
-			case 23: 
-				 $img = "AgADBAAD7bsxG_6P5AH1owOFRKW1_iPZZRkABHrrZ1ziFI8s_JcBAAEC";
-				break;
-			case 24: 
-				 $img = "AgADBAAD7LsxG_6P5AFFXq21bnhPkJoDZhkABPX4yNxScMZqdpkBAAEC";
-				break;
-			case 25: 
-				 $img = "AgADBAAD67sxG_6P5AENqbt5z_sR_5xmZxkABBF0CVuS-OPLI5gBAAEC";
-				break;
-			case 26: 
-				 $img = "AgADBAAD6rsxG_6P5AECzltUtPiv4hoTWhkABPaAhey4jYdxXB8CAAEC";
-				break;
-			case 27: 
-				 $img = "AgADBAAD6bsxG_6P5AH_MaPR5DlCzgouXhkABJa919QP8w8iORsCAAEC";
-				break;
-					 
-			case 28: 
-				 $img = "AgADBAAD7rsxG_6P5AFhe7_Qu-kRX2JqaRkABF5R-41zlAPw6YQAAgI";
-				break;
-					 
-			case 29: 
-				 $img = "AgADBAAD77sxG_6P5AGks2awaAyAlPlmZxkABG3Aex8YQOd-y5kBAAEC";
-				break;
-					 
-			case 30: 
-				 $img = "AgADBAAD8LsxG_6P5AHHXI3m6iq6kjrkZRkABHwQNL25AtpXjZQBAAEC";
-				break;
-					 
-			case 31: 
-				 $img = "AgADBAAD8bsxG_6P5AGodgNIRNRLaqb9ZRkABJHRJUNVMsPFmpUBAAEC";
-				break;
-					 
-			case 32: 
-				 $img = "AgADBAAD8rsxG_6P5AENkBKVNNTMul1sXhkABOOuBoyabiC0oh4CAAEC";
-				break;
-					 
-			case 33: 
-				 $img = "AgADBAAD9LsxG_6P5AHeQM7Pbigjc5kgWxkABAF_ilwAAaGgNqIhAgABAg";
-				break;
-					 
-			case 34: 
-				 $img = "AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC";
-				break;
-					 
-			case 35: 
-				 $img = "AgADBAAD4rsxG_6P5AEDUxfLZwgO-cLYZRkABAbNkLZeTaNbAAGWAQABAg";
-				break;
-					 
-			case 36: 
-				 $img = "AgADBAAD9bsxG_6P5AFIhBxT8CAXw00OZhkABIKc8_fyGcsDvJUBAAEC";
-				break;
-					 
-			case 37: 
-				 $img = "AgADBAAD9rsxG_6P5AEwLaXJvOI53P4MZhkABKEEInD469qkq5YBAAEC";
-				break;
-					 
-			case 38: 
-				 $img = "AgADBAAD97sxG_6P5AFEGxJVWA2E_0hFaRkABJuWg_IdT3ujOogAAgI";
-				break;
-					 
-			case 39: 
-				 $img = "AgADBAAD-LsxG_6P5AFBWZcciSi8OKkuXhkABEbJ1nAx0Y5kZCICAAEC";
-				break;
-					 
-			case 40: 
-				 $img = "AgADBAAD-rsxG_6P5AHelRIzrdUo79wPYBkABDvRfQNOmG2kNCACAAEC";
-				break;
-					 
-			case 41: 
-				 $img ="AgADBAAD-bsxG_6P5AFJmSiCu0w3xN6dWxkABPZaWBnqpkFyNB8CAAEC";
-				break; 
-				 case 42:
-$img ="AgADBAADSrwxG_6P5AFYHR1uZP-UMC6KXhkABJazXuNYt7OCwCICAAEC";
-break;
-case 43:
-$img ="AgADBAADSbwxG_6P5AGredOsyOMWNGt9WBkABB8ZBdA1DGeXRCUCAAEC";
-break;
-case 44:
-$img ="AgADBAADSLwxG_6P5AGf_2b6n01fEBwAAWAZAASRM-SP2Tz9p6ojAgABAg";
-break;
-case 45:
-$img ="AgADBAADR7wxG_6P5AEDOOAjnUNZ-rVeaRkABG_nbUAu4LU-wokAAgI";
-break;
-case 46:
-$img ="AgADBAADRrwxG_6P5AH50XFBggjPG1PpWRkABF4GgyZOKlZHfCUCAAEC";
-break;
-case 47:
-$img ="AgADBAADObwxG_6P5AHyFP2BN4C_PinlZRkABD7GozL0hzER-JgBAAEC";
-break;
-case 48:
-$img ="AgADBAADOrwxG_6P5AEKuWeFXR3i0OFkZxkABNKZl6sobHkYR5YBAAEC";
-break;
-case 49:
-$img ="AgADBAADO7wxG_6P5AEJgCfIevlmwRvmWRkABL8a_6BYjijCSB8CAAEC";
-break;
-case 50:
-$img ="AgADBAADPLwxG_6P5AH3WOjRvysPb5QBYBkABM0ss3rUs2Aj4SACAAEC";
-break;
-case 51:
-$img ="AgADBAADPbwxG_6P5AFtNpreFz65UAmfWxkABF7C03LoB4Y69x0CAAEC";
-break;
-case 52:
-$img ="AgADBAADPrwxG_6P5AHzEownwtryLcQKZhkABE5ennZEYAL9oJsBAAEC";
-break;
-case 53:
-$img ="AgADBAADP7wxG_6P5AFB9SHhRffHM_vyXxkABNpw5k7aaz9foiACAAEC";
-break;
-		 }
+if($num == 109){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Dokyun"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "﻿AgADBAAEwjEbTzM_A9z9lvNxnrG7vQ1gGQAE5puONfn97Ko3IwIAAQI"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "History"
+]);
+}
+if($num == 110){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Jaeho"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD_8ExG08zPwOj_ZKYWSpEqDOKXhkABPkBnFEAAZofP18dAgABAg"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "History"
+]);
+}
+if($num == 111){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Sihyoung"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD_sExG08zPwNWfoRyQsi9e6jZaBkABBONzlDQiFdDnpoBAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "History"
+]);
+}
+if($num == 112){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Yijeong"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD_cExG08zPwOsx2Z1WtWGwtqdWxkABNeIslN1w8xVOSECAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "History"
+]);
+}
+if($num == 113){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Kyung Il"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD_MExG08zPwMSVCsjwz4vDuTaWRkABKZlN51aOwETSCECAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "History"
+]);
+}
+if($num == 114){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Rose"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD8MExG08zPwMXUT0rOuxrwP6dZxkABAroKufB8-QDvpYBAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "BlackPink"
+]);
+}
+if($num == 115){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Jisoo"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD78ExG08zPwNoGo6mYa96rC2FZxkABBDW0rOZLkp9T5oBAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Black Pink"
+]);
+}
+if($num == 116){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Jennie"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD7sExG08zPwPtvn2AYTwJVUexXxkABHPyH-tZP7BF6R4CAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Black Pink"
+]);
+}
+if($num == 117){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Lisa"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD7cExG08zPwMsI9G6aBPrb_wrXhkABFXE8ja5TaVUcyECAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Black Pink"
+]);
+}
+if($num == 118){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Junior Royal"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD7MExG08zPwNUuj7KQWAgWZoOZhkABNPg7eP50mtoOZgBAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Nu’est"
+]);
+}
+if($num == 119){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Aron"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD68ExG08zPwOymOdhD78CN5LkZxkABNSkp1OdjUTp2YcAAgI"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Nu’est"
+]);
+}
+if($num == 120){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Baekho"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD6sExG08zPwMn62cmuo9U2cSIXhkABD3MGz-Dlyhb1BYCAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Nu’est"
+]);
+}
+if($num == 121){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Minhyun"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD6cExG08zPwNGG8woKhN0B-D7ZRkABAkNz-DseAoif5kBAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Nu’est"
+]);
+}
+if($num == 122){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Ren"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD6MExG08zPwOFomYFL1FNHTN8ZxkABGX-uP4oeToLs5sBAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Nu’est"
+]);
+}
+if($num == 123){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Minhyuk"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD58ExG08zPwM2YjJIZ6QH8N4hZhkABNyoehePs1IQApsBAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Monsta X"
+]);
+}
+if($num == 124){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Kihyun"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD5sExG08zPwP8pnnY2VL_JGJ4XhkABF6AjRE2ZYI-xiECAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Monsta X"
+]);
+}
+if($num == 125){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Shownu"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD5cExG08zPwPHxUnBPASCX9rjXxkABJIcSPvM6IPxuhwCAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Monsta X"
+]);
+}
+if($num == 126){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Wonho"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD5MExG08zPwNI_hmZi_jb4J6xXxkABERwjOdGQULxwSMCAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Monsta X"
+]);
+}
+if($num == 127){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "IM"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD48ExG08zPwNPSHuo_Bx47ZCNZxkABMCpzngl_JYYtpUBAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Monsta X"
+]);
+}
+if($num == 128){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Jooheon"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD4sExG08zPwNrfrS_AVvPMmZNaRkABDtoCLAsa4cVBocAAgI"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Monsta X"
+]);
+}
+if($num == 129){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Hyungwon"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD4cExG08zPwN4roGbnzQXWRrhZxkABAhECU3oa6Ji1YcAAgI"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Monsta X"
+]);
+}
+if($num == 130){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Jay Park"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD-MExG08zPwM7D9k6Trr5cK21XxkABOcNg0tbsGSdcR4CAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "AOMG"
+]);
+}
+if($num == 131){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Jaehyo"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD98ExG08zPwO0ODkzdYzmugjqZxkABK_o6jdAEUSxBpYBAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Block B"
+]);
+}
+if($num == 132){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "B-Bomb"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD9sExG08zPwNxDEqUNCayQydKaRkABE389KVE6ztgzIkAAgI"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Block B"
+]);
+}
+if($num == 133){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Park Kyung"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD9cExG08zPwPwGHBrso90ffZcaRkABD5fEc0IBpxpXocAAgI"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Block B"
+]);
+}
+if($num == 134){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Taeil"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD9MExG08zPwNF3T5eCZ7ihQcsXhkABOMGwWEcWRoh7h0CAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Block B"
+]);
+}
+if($num == 135){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "U-kwon"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD88ExG08zPwMORfpye6ubQXfEXxkABGDp8dehL4jm5BwCAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Block B"
+]);
+}
+if($num == 136){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "P.O"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD8sExG08zPwPLZgERAAH_xcZ6nVsZAASGMpabD8tHhe8hAgABAg"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Block B"
+]);
+}
+if($num == 137){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Zico"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD8cExG08zPwOF3ZYkCk04p04fYBkABPts39camaZSsxsCAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Block B"
+]);
+}
+if($num == 138){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Chanhyuk"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD-cExG08zPwO8uJ3jXycJFTEfYBkABTpLB1uSzl8VHwIAAQI"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Akdong Musician"
+]);
+}
+if($num == 139){
+$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "El idol del dia es..."
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Suhyun"
+]);
+$response = $client->sendPhoto([
+'chat_id' => $update->message->chat->id,
+'photo' => "AgADBAAD-sExG08zPwNFUtXA2wHACfzvXxkABIw51TVmt82xOB0CAAEC"
+]);
+$response = $client->sendMessage([
+'chat_id' => $update->message->chat->id,
+'text' => "Akdong Musician"
+]);
+}		 
 		 
-	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-    	$response = $client->sendMessage([
-    		'chat_id' => $update->message->chat->id,
-    		'text' => "Alguien dijo abs?? ( ͡° ͜ʖ ͡°)"
-    		]);
-	$response = $client->sendPhoto([
-        		'chat_id' => $update->message->chat->id,
-			'photo' => $img
-     	]);
-	 }
+} //Final del kpop del dia
+	    
+	    
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
     		'text' => $update->message->photo[2]->file_id
