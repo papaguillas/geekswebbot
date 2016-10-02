@@ -716,7 +716,17 @@ try {
     }
     else
     {
-    	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	 if(preg_match("/.*abs.*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    	$response = $client->sendMessage([
+    		'chat_id' => $update->message->chat->id,
+    		'text' => "Alguien dijo abs?? ( ͡° ͜ʖ ͡°)"
+    		]);
+	$response = $client->sendPhoto([
+        		'chat_id' => $update->message->chat->id,
+			'photo' => "AgADBAADAqgxG307iw2D1gOB2_L2XbymZxkABAnVzC-R8ES5fpcBAAEC"
+     	]);
+	 }
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
     		'text' => $update->message->photo[2]->file_id
