@@ -318,7 +318,7 @@ break;
 	$gestor = fopen($nombre_fichero, "r");
 	$contenido = fread($gestor, filesize($nombre_fichero));
 	fclose($gestor);
-	 if($contenido != date("l") || 1 == 1){
+	 if($contenido != date("l")){
 		$fp = fopen('a.txt', 'w');
 		fwrite($fp, date("l"));
 		fclose($fp);	 
