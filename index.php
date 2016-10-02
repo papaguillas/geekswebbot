@@ -2264,6 +2264,42 @@ $response = $client->sendMessage([
 			case 41: 
 				 $img ="AgADBAAD-bsxG_6P5AFJmSiCu0w3xN6dWxkABPZaWBnqpkFyNB8CAAEC";
 				break; 
+				 case 42:
+$img ="AgADBAADSrwxG_6P5AFYHR1uZP-UMC6KXhkABJazXuNYt7OCwCICAAEC";
+break;
+case 43:
+$img ="AgADBAADSbwxG_6P5AGredOsyOMWNGt9WBkABB8ZBdA1DGeXRCUCAAEC";
+break;
+case 44:
+$img ="AgADBAADSLwxG_6P5AGf_2b6n01fEBwAAWAZAASRM-SP2Tz9p6ojAgABAg";
+break;
+case 45:
+$img ="AgADBAADR7wxG_6P5AEDOOAjnUNZ-rVeaRkABG_nbUAu4LU-wokAAgI";
+break;
+case 46:
+$img ="AgADBAADRrwxG_6P5AH50XFBggjPG1PpWRkABF4GgyZOKlZHfCUCAAEC";
+break;
+case 47:
+$img ="AgADBAADObwxG_6P5AHyFP2BN4C_PinlZRkABD7GozL0hzER-JgBAAEC";
+break;
+case 48:
+$img ="AgADBAADOrwxG_6P5AEKuWeFXR3i0OFkZxkABNKZl6sobHkYR5YBAAEC";
+break;
+case 49:
+$img ="AgADBAADO7wxG_6P5AEJgCfIevlmwRvmWRkABL8a_6BYjijCSB8CAAEC";
+break;
+case 50:
+$img ="AgADBAADPLwxG_6P5AH3WOjRvysPb5QBYBkABM0ss3rUs2Aj4SACAAEC";
+break;
+case 51:
+$img ="AgADBAADPbwxG_6P5AFtNpreFz65UAmfWxkABF7C03LoB4Y69x0CAAEC";
+break;
+case 52:
+$img ="AgADBAADPrwxG_6P5AHzEownwtryLcQKZhkABE5ennZEYAL9oJsBAAEC";
+break;
+case 53:
+$img ="AgADBAADP7wxG_6P5AFB9SHhRffHM_vyXxkABNpw5k7aaz9foiACAAEC";
+break;
 		 }
 		 
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
