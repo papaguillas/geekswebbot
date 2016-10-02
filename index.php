@@ -716,7 +716,7 @@ try {
     }
     else
     {
-	 if(preg_match("/.*abs.*/", $update->message->text)){
+	 if(preg_match("/.*abs.*/", $update->message->text) || preg_match("/.*ABS.*/", $update->message->text) || preg_match("/.*Abs.*/", $update->message->text)){
 	 $roll = rand(1,41);
          $img = "AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC";
 		 switch($roll){
@@ -869,10 +869,10 @@ try {
 			'photo' => $img
      	]);
 	 }
-    	//$response = $client->sendMessage([
-    		//'chat_id' => $update->message->chat->id,
-    		//'text' => $update->message->photo[2]->file_id
-    		//]);
+    	$response = $client->sendMessage([
+    		'chat_id' => $update->message->chat->id,
+    		'text' => $update->message->photo[2]->file_id
+    		]);
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
     //echo error message ot log it
