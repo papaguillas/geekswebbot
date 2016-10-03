@@ -24,16 +24,27 @@ $url = 'koreanbot.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));	
 try {
     date_default_timezone_set('Spain/Madrid');
+	
     if($update->message->text == '/bisarro')
     {
 	$nombre = "b.txt";
 	$gestore = fopen($nombre, "r");
 	$contenid = fread($gestore, filesize($nombre));
 	fclose($gestore);
+	    	$nombre1 = "a.txt";
+	$gestore1 = fopen($nombre1, "r");
+	$contenid1 = fread($gestore1, filesize($nombre1));
+	fclose($gestore1);
+
     	$response = $client->sendMessage([
         	'chat_id' => $update->message->chat->id,
 		'text' => $contenid
      	]);
+	$response = $client->sendMessage([
+        	'chat_id' => $update->message->chat->id,
+		'text' => $contenid1
+     	]);
+
     }
     else if($update->message->text == '/latggdshsgsdgasgaest')
     {
@@ -53,6 +64,15 @@ try {
     }
     else
     {
+	    
+	    	   if(preg_match("/.*wow.*/", $update->message->text) || preg_match("/.*Wow.*/", $update->message->text) || preg_match("/.*WOW.*/", $update->message->text)){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+			$response = $client->sendMessage([
+					'chat_id' => $update->message->chat->id,
+					'text' => "Fantastic Baby 🎵"				
+				]);	    
+		 }
+
 	    
 	    	 if(preg_match("/.*buenas noches.*/", $update->message->text) || preg_match("/.*Buenas noches.*/", $update->message->text) || preg_match("/.*Buenas Noches.*/", $update->message->text)){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
@@ -333,10 +353,10 @@ break;
 	$gestor = fopen($nombre_fichero, "r");
 	$contenido = fread($gestor, filesize($nombre_fichero));
 	fclose($gestor);
-	 if($contenido != date("l")){
+	 if($contenido != date("l") && 1 == 2){
 		$fp = fopen('a.txt', 'w');
 		fwrite($fp, date("l"));
-		fclose($fp);	 
+		fclose($fp);
 		$num = rand(1,139);
 		$fb = fopen('b.txt', 'a');
 		fwrite($fb, $num);
