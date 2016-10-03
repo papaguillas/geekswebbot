@@ -53,7 +53,22 @@ try {
     }
     else
     {
-	 if(preg_match("/.*abs.*/", $update->message->text) || preg_match("/.*ABS.*/", $update->message->text) || preg_match("/.*Abs.*/", $update->message->text)){
+	    
+	    	 if(preg_match("/.*buenas noches.*/", $update->message->text) || preg_match("/.*Buenas noches.*/", $update->message->text) || preg_match("/.*Buenas Noches.*/", $update->message->text)){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+			$response = $client->sendMessage([
+					'chat_id' => $update->message->chat->id,
+					'text' => "buenas noches, sueña con tus bias <3"				
+				]);	    
+		 }
+	    	 if(preg_match("/.*abogado.*/", $update->message->text)){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+			$response = $client->sendMessage([
+					'chat_id' => $update->message->chat->id,
+					'text' => "el que tengo aqui colgado"				
+				]);	    
+		 }
+	    if(preg_match("/.*abs.*/", $update->message->text) || preg_match("/.*ABS.*/", $update->message->text) || preg_match("/.*Abs.*/", $update->message->text)){
 	 $roll = rand(1,77);
          $img = "AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC";
 		 switch($roll){
