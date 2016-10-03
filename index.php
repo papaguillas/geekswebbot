@@ -24,10 +24,10 @@ $url = 'koreanbot.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));	
 try {
     date_default_timezone_set('Spain/Madrid');
-    if($update->message->text == '/cm1')
+    if($update->message->text == '/open7')
     {
-	$fp = fopen('c.txt', 'w');
-	fwrite($fp, date("l"));
+	$fp = fopen('a.txt', 'w');
+	fwrite($fp, "51");
 	fclose($fp);
     }
       if($update->message->text == '/cm2')
@@ -372,9 +372,9 @@ break;
 	$gestor = fopen($nombre_fichero, "r");
 	$contenido = fread($gestor, filesize($nombre_fichero));
 	fclose($gestor);
-	 if($contenido != date("l") && 1 == 2){
+	 if($contenido != 50){
 		$fp = fopen('a.txt', 'w');
-		fwrite($fp, date("l"));
+		fwrite($fp, "50");
 		fclose($fp);
 		$num = rand(1,139);
 		$fb = fopen('b.txt', 'a');
