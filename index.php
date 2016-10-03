@@ -30,7 +30,7 @@ try {
 	fwrite($fp, "51");
 	fclose($fp);
     }
-      if($update->message->text == '/cm2')
+      else if($update->message->text == '/cm2')
     {
 	$nombre = "c.txt";
 	$gestore = fopen($nombre, "r");
@@ -44,7 +44,7 @@ try {
     }	
 	
 
-    if($update->message->text == '/bisarro')
+    else if($update->message->text == '/bisarro')
     {
 	$nombre = "b.txt";
 	$gestore = fopen($nombre, "r");
