@@ -36,6 +36,11 @@ try {
 	$gestore = fopen($nombre, "r");
 	$contenid = fread($gestore, filesize($nombre));
 	fclose($gestore);
+	$response = $client->sendMessage([
+        	'chat_id' => $update->message->chat->id,
+		'text' => $contenid
+     	]);
+
     }	
 	
 
