@@ -24,7 +24,21 @@ $url = 'koreanbot.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));	
 try {
     date_default_timezone_set('Spain/Madrid');
+    if($update->message->text == '/cm1')
+    {
+	$fp = fopen('c.txt', 'w');
+	fwrite($fp, date("l"));
+	fclose($fp);
+    }
+      if($update->message->text == '/cm2')
+    {
+	$nombre = "c.txt";
+	$gestore = fopen($nombre, "r");
+	$contenid = fread($gestore, filesize($nombre));
+	fclose($gestore);
+    }	
 	
+
     if($update->message->text == '/bisarro')
     {
 	$nombre = "b.txt";
