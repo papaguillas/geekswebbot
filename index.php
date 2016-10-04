@@ -101,7 +101,7 @@ try {
 				]);	    
 		 }
 	    
-	    	  if(preg_match("/..*[gG][rR][aA][cC][iI][aA][sS].*[bB][oO][tT].*/", $update->message->text)){
+	    	  if(preg_match("/.*[gG][rR][aA][cC][iI][aA][sS].*[bB][oO][tT].*/", $update->message->text)){
 			
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 			$rann = rand(1,6);
