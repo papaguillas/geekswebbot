@@ -100,6 +100,37 @@ try {
 					'text' => "buenas noches, sueña con tus bias <3"				
 				]);	    
 		 }
+	    
+	    	  if(preg_match("/..*[gG][rR][aA][cC][iI][aA][sS].*[bB][oO][tT].*/", $update->message->text)){
+			
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+			$rann = rand(1,6);
+			if($rann == 1){
+			$response = $client->sendMessage([
+					'chat_id' => $update->message->chat->id,
+					'text' => "de nada 👉😉👉"				
+				]);
+			}
+			if($rann == 2){
+						$response = $client->sendMessage([
+					'chat_id' => $update->message->chat->id,
+					'text' => "de nada oiga"				
+				]);
+			}
+			if($rann == 3 || $rann == 4){
+						$response = $client->sendMessage([
+					'chat_id' => $update->message->chat->id,
+					'text' => "천만에요!"				
+				]);
+			}
+			if($rann == 5 || $rann == 6){
+						$response = $client->sendMessage([
+					'chat_id' => $update->message->chat->id,
+					'text' => "Las gracias a nuestro dios G Dragon, no a mi."				
+				]);
+			}
+		 }
+
 	    	 if(preg_match("/.*abogado.*/", $update->message->text)){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 			$response = $client->sendMessage([
