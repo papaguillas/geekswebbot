@@ -105,16 +105,10 @@ try {
 			
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 			$rann = rand(1,6);
-			if($rann == 1){
+			if($rann == 1 || $rann == 2){
 			$response = $client->sendMessage([
 					'chat_id' => $update->message->chat->id,
 					'text' => "de nada 👉😉👉"				
-				]);
-			}
-			if($rann == 2){
-						$response = $client->sendMessage([
-					'chat_id' => $update->message->chat->id,
-					'text' => "de nada oiga"				
 				]);
 			}
 			if($rann == 3 || $rann == 4){
