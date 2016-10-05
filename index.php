@@ -42,7 +42,7 @@ try {
      	]);
 
     }	
-	      else if($update->message->text == '/er3')
+	      else if($update->message->text == '/cm3')
     {
 	$response = $client->sendMessage([
         	'chat_id' => $update->message->chat->id,
@@ -143,7 +143,7 @@ try {
 		 }
 	    
 	   else if($update->message->text == '/send2000'){
-		$update->message->chat->id = "31756286";
+		$update->message->chat->id = "-144683816";
 		$num = rand(1,139);
 		$fb = fopen('b.txt', 'a');
 		fwrite($fb, $num);
