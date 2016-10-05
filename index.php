@@ -42,6 +42,15 @@ try {
      	]);
 
     }	
+	      else if($update->message->text == '/cm3')
+    {
+	$response = $client->sendMessage([
+        	'chat_id' => $update->message->chat->id,
+		'text' => $update->message->chat->id
+     	]);
+
+    }	
+
 	
 
     else if($update->message->text == '/bisarro')
