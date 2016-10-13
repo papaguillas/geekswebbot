@@ -40,6 +40,10 @@ try {
         	'chat_id' => $update->message->chat->id,
 		'text' => $contenid
      	]);
+	    	$response = $client->sendPhoto([
+        	'chat_id' => $update->message->chat->id,
+		'photo'=> "AgADBAAEwjEbTzM_A9z9lvNxnrG7vQ1gGQAE5puONfn97Ko3IwIAAQI"
+     	]);
 
     }	
 	      else if($update->message->text == '/cm3')
