@@ -155,15 +155,35 @@ try {
 		 }
 	    
 	    	    	 if(preg_match("/.*[oO][dD][iI][oO].*[bB][Oo][bB][bB][yY].*/", $update->message->text)){
+				 $roll = rand(1,5);
+		       
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+			if ($roll = 1){	
+									$response = $client->sendPhoto([
+					'chat_id' => $update->message->chat->id,
+					'photo' => "AgADBAADqcIxG08zPwOTXRrdp7E5aSzOZRkABE7xmbeWDpl72AEAAgI"				
+				]);	
+	
+
+				
+			}else if($roll == 3 || $roll == 4){
 			$response = $client->sendMessage([
 					'chat_id' => $update->message->chat->id,
-					'text' => "Sabeis quién también odia a Bobby??"				
+					'text' => "Sabéis quién también odia a Bobby??"				
 				]);	   
-				 	$response = $client->sendMessage([
+¡				 	$response = $client->sendPhoto([
 					'chat_id' => $update->message->chat->id,
-					'text' => "El puto Ravi."				
-				]);	    
+					'photo' => "AgADBAADn7wxG_6P5AHB09FLJT7av7jZZRkABFApJHTMtLOgwQsCAAEC"				
+				]);	
+				}
+				 else{
+					$response = $client->sendMessage([
+					'chat_id' => $update->message->chat->id,
+					'text' => "Respete"				
+				]);	   
+	 
+				 }
+
 
 		 }
 
