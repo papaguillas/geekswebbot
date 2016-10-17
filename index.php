@@ -154,6 +154,20 @@ try {
 				]);	    
 		 }
 	    
+	    	    	 if(preg_match("/.*[oO][dD][iI][oO].*[bB][Oo][bB][bB][yY].*/", $update->message->text)){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+			$response = $client->sendMessage([
+					'chat_id' => $update->message->chat->id,
+					'text' => "Sabeis quién también odia a Bobby??"				
+				]);	   
+				 	$response = $client->sendMessage([
+					'chat_id' => $update->message->chat->id,
+					'text' => "El puto Ravi."				
+				]);	    
+
+		 }
+
+	    
 	   else if($update->message->text == '/send2000'){
 		$update->message->chat->id = "-144683816";
 		$num = rand(1,139);
@@ -5727,10 +5741,10 @@ $response = $client->sendMessage([
 } //Final del kpop del dia
 	    
 	    
-    	//$response = $client->sendMessage([
-    		//'chat_id' => $update->message->chat->id,
-    		//'text' => $update->message->photo[2]->file_id
-    		//]);
+    	$response = $client->sendMessage([
+    		'chat_id' => $update->message->chat->id,
+    		'text' => $update->message->photo[2]->file_id
+    		]);
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
     //echo error message ot log it
