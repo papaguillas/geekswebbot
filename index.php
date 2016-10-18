@@ -154,18 +154,15 @@ try {
 				]);	    
 		 }
 	    
-	    	    	 if(preg_match("/.*[oO][dD][iI][oO].*[bB][Oo][bB][bB][yY].*/", $update->message->text)){
+	    	     if(preg_match("/.*[oO][dD][iI][oO].*[bB][Oo][bB][bB][yY].*/", $update->message->text)){
 				 $roll = rand(1,5);
 		       
-			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 			if ($roll = 1){	
-									$response = $client->sendPhoto([
+					$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+					$response = $client->sendPhoto([
 					'chat_id' => $update->message->chat->id,
 					'photo' => "AgADBAADqcIxG08zPwOTXRrdp7E5aSzOZRkABE7xmbeWDpl72AEAAgI"				
-				]);	
-	
-
-				
+				]);				
 			}else if($roll == 3 || $roll == 4){
 			$response = $client->sendMessage([
 					'chat_id' => $update->message->chat->id,
@@ -181,11 +178,10 @@ try {
 					'chat_id' => $update->message->chat->id,
 					'text' => "Respete"				
 				]);	   
-	 
 				 }
 
 
-		 }
+				 }
 
 	    
 	   else if($update->message->text == '/send2000'){
@@ -5761,10 +5757,10 @@ $response = $client->sendMessage([
 } //Final del kpop del dia
 	    
 	    
-    	$response = $client->sendMessage([
-    		'chat_id' => $update->message->chat->id,
-    		'text' => $update->message->photo[2]->file_id
-    		]);
+    	//$response = $client->sendMessage([
+    	//	'chat_id' => $update->message->chat->id,
+    	//	'text' => $update->message->photo[2]->file_id
+    	//	]);
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
     //echo error message ot log it
