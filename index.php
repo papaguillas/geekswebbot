@@ -17,7 +17,6 @@
 *
 */
 require 'vendor/autoload.php';
-
 $date = date('m/d/Y h:i:s a', time());
 $client = new Zelenin\Telegram\Bot\Api('297927337:AAHXURwcz2EK8rFMsssTn90t2iNLGTtJLMw'); // Set your access token
 $url = 'koreanbot.herokuapp.com/'; // URL RSS feed
@@ -44,7 +43,6 @@ try {
         	'chat_id' => $update->message->chat->id,
 		'photo'=> "AgADBAAEwjEbTzM_A9z9lvNxnrG7vQ1gGQAE5puONfn97Ko3IwIAAQI"
      	]);
-
     }	
 	      else if($update->message->text == '/cm3')
     {
@@ -52,7 +50,6 @@ try {
         	'chat_id' => $update->message->chat->id,
 		'text' => $update->message->chat->id
      	]);
-
     }	
 	      else if($update->message->text == '/cm5')
     {
@@ -60,11 +57,8 @@ try {
         	'chat_id' => "-144683816",
 		'text' => "Dejad de intentar que diga cosas graciosas, no soy un payaso, solo un kbot :("
      	]);
-
     }	
-
 	
-
     else if($update->message->text == '/bisarro')
     {
 	$nombre = "b.txt";
@@ -75,7 +69,6 @@ try {
 	$gestore1 = fopen($nombre1, "r");
 	$contenid1 = fread($gestore1, filesize($nombre1));
 	fclose($gestore1);
-
     	$response = $client->sendMessage([
         	'chat_id' => $update->message->chat->id,
 		'text' => $contenid
@@ -84,7 +77,6 @@ try {
         	'chat_id' => $update->message->chat->id,
 		'text' => $contenid1
      	]);
-
     }
     else if($update->message->text == '/latggdshsgsdgasgaest')
     {
@@ -112,7 +104,6 @@ try {
 					'text' => "Fantastic Baby 🎵"				
 				]);	    
 		 }
-
 	    
 	    	 if(preg_match("/.*buenas noches.*/", $update->message->text) || preg_match("/.*Buenas noches.*/", $update->message->text) || preg_match("/.*Buenas Noches.*/", $update->message->text)){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
@@ -145,7 +136,6 @@ try {
 				]);
 			}
 		 }
-
 	    	 if(preg_match("/.*[aA]bogado.*/", $update->message->text)){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 			$response = $client->sendMessage([
@@ -154,36 +144,6 @@ try {
 				]);	    
 		 }
 	    
-	    	     if(preg_match("/.*[oO][dD][iI][oO].*[bB][Oo][bB][bB][yY].*/", $update->message->text)){
-				 $roll = rand(1,5);
-		       
-			if ($roll = 1){	
-					$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-					$response = $client->sendPhoto([
-					'chat_id' => $update->message->chat->id,
-					'photo' => "AgADBAADqcIxG08zPwOTXRrdp7E5aSzOZRkABE7xmbeWDpl72AEAAgI"				
-				]);				
-			}else if($roll == 3 || $roll == 4){
-			$response = $client->sendMessage([
-					'chat_id' => $update->message->chat->id,
-					'text' => "Sabéis quién también odia a Bobby??"				
-				]);	   
-¡				 	$response = $client->sendPhoto([
-					'chat_id' => $update->message->chat->id,
-					'photo' => "AgADBAADn7wxG_6P5AHB09FLJT7av7jZZRkABFApJHTMtLOgwQsCAAEC"				
-				]);	
-				}
-				 else{
-					$response = $client->sendMessage([
-					'chat_id' => $update->message->chat->id,
-					'text' => "Respete"				
-				]);	   
-				 }
-
-
-				 }
-
-	    
 	   else if($update->message->text == '/send2000'){
 		$update->message->chat->id = "-144683816";
 		$num = rand(1,139);
@@ -191,7 +151,6 @@ try {
 		fwrite($fb, $num);
 		fwrite($fb, " ");
 		fclose($fb);	 
-
 		 if($num == 1){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
@@ -3111,7 +3070,6 @@ break;
 		fwrite($fb, $num);
 		fwrite($fb, " ");
 		fclose($fb);	 
-
 		 if($num == 1){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     			$response = $client->sendMessage([
@@ -5758,9 +5716,9 @@ $response = $client->sendMessage([
 	    
 	    
     	//$response = $client->sendMessage([
-    	//	'chat_id' => $update->message->chat->id,
-    	//	'text' => $update->message->photo[2]->file_id
-    	//	]);
+    		//'chat_id' => $update->message->chat->id,
+    		//'text' => $update->message->photo[2]->file_id
+    		//]);
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
     //echo error message ot log it
