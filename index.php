@@ -136,6 +136,29 @@ try {
 				]);
 			}
 		 }
+	    
+	    
+	    	 if(preg_match("/.*[oO][dD][iI][oO].*[bB][Oo][bB][bB][yY].*/", $update->message->text)){
+			$roll = rand(1,2);
+			 if($roll == 1){
+			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+ 			$response = $client->sendMessage([
+ 					'chat_id' => $update->message->chat->id,
+ 					'text' => "Sabeis quién también odia a Bobby??"				
+ 				]);	   
+ 				 	$response = $client->sendPhoto([
+ 					'chat_id' => $update->message->chat->id,
+ 					'photo' => "AgADBAADqMIxG08zPwPQPt5Bg29JyIEZYBkABNqdqB2sHhgI8DkAAgI"				
+ 			]);
+			 }
+			 else{
+			 		$response = $client->sendPhoto([
+ 					'chat_id' => $update->message->chat->id,
+ 					'photo' => "AgADBAADqcIxG08zPwOTXRrdp7E5aSzOZRkABE7xmbeWDpl72AEAAgI"				
+ 			]);
+	 
+			 }
+		 }
 	    	 if(preg_match("/.*[aA]bogado.*/", $update->message->text)){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 			$response = $client->sendMessage([
