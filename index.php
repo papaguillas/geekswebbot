@@ -168,7 +168,7 @@ try {
 		 }
 	    
 	   else if($update->message->text == '/patricio2000'){
-		$update->message->chat->id = "-144683816";
+		$update->message->chat->id = "-125893585";
 		$num = rand(1,139);
 		$fb = fopen('b.txt', 'a');
 		fwrite($fb, $num);
