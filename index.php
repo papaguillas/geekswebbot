@@ -2820,7 +2820,7 @@ $response = $client->sendMessage([
 	    
 	    
 	    if(preg_match("/.*abs.*/", $update->message->text) || preg_match("/.*ABS.*/", $update->message->text) || preg_match("/.*Abs.*/", $update->message->text)){
-	 $roll = rand(1,77);
+	 $roll = rand(1,177);
          $img = "AgADBAAD87sxG_6P5AEHg23l9XUNb-VPWxkABA0Nk_GZw5mhqSMCAAEC";
 		 switch($roll){
 			 case 1: 
@@ -3067,6 +3067,306 @@ $img ="AgADBAADGcIxG08zPwOZl34rtWcCPR1OaRkABChz6yI9wXvmiYYAAgI";
 break;
 case 77:
 $img ="AgADBAADGsIxG08zPwM-6tjqfbm5JcxHaRkABDHGB3fUHDwhhIQAAgI";
+break;
+				 case 78:
+$img ="AgADBAADA6gxGxQMUFC7Gzir_n1IVYH7nxkABDemmc0_Hf6equ4AAgI";
+break;
+case 79:
+$img ="AgADBAADBKgxGxQMUFBA7cEevKnOzeBbZBkABIK5U6Qiz8Zh8nICAAEC";
+break;
+case 80:
+$img ="AgADBAADBagxGxQMUFAHve8Mr13caQ9znhkABPvWq7BJfiZP4-4AAgI";
+break;
+case 81:
+$img ="AgADBAADBqgxGxQMUFDQuTITlXIZz1hLaRkABL7RuH2ZXm1gAmYDAAEC";
+break;
+case 82:
+$img ="AgADBAADB6gxGxQMUFAAARhPLJDHn2EnaGkZAAS_pz8Rh-zKiWphAwABAg";
+break;
+case 83:
+$img ="AgADBAADCKgxGxQMUFBKvxUKOvI8LyhVZhkABBNoV3lL3iVXF3kEAAEC";
+break;
+case 84:
+$img ="AgADBAADCagxGxQMUFA7rVjf5x-FOP7KmxkABBfrJBYAAf94BeDtAAIC";
+break;
+case 85:
+$img ="AgADBAADCqgxGxQMUFCCynYtCkPjhiUIaRkABGjr57kauvtK9XEEAAEC";
+break;
+case 86:
+$img ="AgADBAADC6gxGxQMUFD9AAE7JCocSZeyd2QZAASPdqpcXWZ35L51AgABAg";
+break;
+case 87:
+$img ="AgADBAADDKgxGxQMUFBxmOsD6H8AAtOaZBkABLPMsDPW1w9JGW0CAAEC";
+break;
+case 88:
+$img ="AgADBAADDagxGxQMUFDTBmt31aunWcYNoBkABMqIA68WdAOg1O8AAgI";
+break;
+case 89:
+$img ="AgADBAADDqgxGxQMUFCjoXIoKCUfHaaHZxkABBx72_wtvSdP3mYDAAEC";
+break;
+case 90:
+$img ="AgADBAADD6gxGxQMUFDB2SqVNXLDAQHJnhkABLaQ4kzX7aHqgO8AAgI";
+break;
+case 91:
+$img ="AgADBAADEKgxGxQMUFBOKWobKBY3TbR-ZBkABJA7AUOBLPR14HACAAEC";
+break;
+case 92:
+$img ="AgADBAADEagxGxQMUFAcDlztAAH0smSuiGcZAAT3j3ww6O8_ohNiAwABAg";
+break;
+case 93:
+$img ="AgADBAADEqgxGxQMUFCjJp0W2DBGDjQGYBkABOlnQTSgfcK0yHQCAAEC";
+break;
+case 94:
+$img ="AgADBAADE6gxGxQMUFAkMCOhzKMVYGbXnBkABBAHx2kjy8JDjfEAAgI";
+break;
+case 95:
+$img ="AgADBAADFKgxGxQMUFCxuqkxPP-7JGXIZBkABD86p3zbbCmOAnECAAEC";
+break;
+case 96:
+$img ="AgADBAADFagxGxQMUFCSyVOBHReCEq7ynBkABIEn-d0d4bHo5fAAAgI";
+break;
+case 97:
+$img ="AgADBAADFqgxGxQMUFBxd0fPZWvqTZp_ZBkABJD6-H_wVUAhaW0CAAEC";
+break;
+case 98:
+$img ="AgADBAADF6gxGxQMUFDNiqXDNm6kfxZTaRkABHthuo_yjoo9dlwDAAEC";
+break;
+case 99:
+$img ="AgADBAADGKgxGxQMUFBCfi0HM-E4fpYTnRkABEbxRH23wJHdg-wAAgI";
+break;
+case 100:
+$img ="AgADBAADGagxGxQMUFDWvsdnwdEQUm-_mxkABLnx9EccnHOJwfIAAgI";
+break;
+case 101:
+$img ="AgADBAADGqgxGxQMUFC8j0vTWY0oiD0XZhkABE4lipMJVJTh-HACAAEC";
+break;
+case 102:
+$img ="AgADBAADG6gxGxQMUFCs6Mbbo391dQzonBkABLRcUuqDp5nBLu4AAgI";
+break;
+case 103:
+$img ="AgADBAADHKgxGxQMUFB7Tk6aENGTBaKNZBkABLSgQ_6NSB2akXICAAEC";
+break;
+case 104:
+$img ="AgADBAADHagxGxQMUFCvPL7oPovhsSgGYBkABMIO-bPIUTXR_HoCAAEC";
+break;
+case 105:
+$img ="AgADBAADHqgxGxQMUFBiQH_NXJkcQ_fIZBkABKxkeyNmZi62LWsCAAEC";
+break;
+case 106:
+$img ="AgADBAADH6gxGxQMUFDLTmIy5n4kSfWRZBkABCBsB-GojvsG1WwCAAEC";
+break;
+case 107:
+$img ="AgADBAADIKgxGxQMUFDrRQ9VgCIP8UXyaBkABIkEusrAvnD_n3oEAAEC";
+break;
+case 108:
+$img ="AgADBAADIagxGxQMUFDe48ZA1u28ZJFPaRkABApOEQAB-Vx0KIRZAwABAg";
+break;
+case 109:
+$img ="AgADBAADIqgxGxQMUFDFVuL23HyQuRpYaRkABGoQyOPKvrdvZmQDAAEC";
+break;
+case 110:
+$img ="AgADBAADI6gxGxQMUFBspqrlPWhBefSXZBkABC1UkF2J9bjWFmsCAAEC";
+break;
+case 111:
+$img ="AgADBAADJKgxGxQMUFBghegl3FDWNofUnBkABBPdFSBwuJMHMe4AAgI";
+break;
+case 112:
+$img ="AgADBAADJqgxGxQMUFApzS0-Tply7vk2aRkABCVPZ_YxuxjHTmUDAAEC";
+break;
+case 113:
+$img ="AgADBAADJ6gxGxQMUFCryjLmXvoOaFpeZxkABEwbdqn2Tui36m8CAAEC";
+break;
+case 114:
+$img ="AgADBAADKKgxGxQMUFDwKyvja_g7Gs0OZhkABMQ2S6p-ZRB8cG0EAAEC";
+break;
+case 115:
+$img ="AgADBAADKagxGxQMUFCFvJxlJH7541__nxkABPGvVfwLyBKKV-4AAgI";
+break;
+case 116:
+$img ="AgADBAADKqgxGxQMUFDiTDjJceY1loeNZBkABKrHmqiX6la93GwCAAEC";
+break;
+case 117:
+$img ="AgADBAADK6gxGxQMUFAN4TR6v_9cdzQfoBkABLu0qh1sWrXZvu4AAgI";
+break;
+case 118:
+$img ="AgADBAADLKgxGxQMUFBQQwABmYj7BMGY2ZwZAATG--H2YNtDK4DuAAIC";
+break;
+case 119:
+$img ="AgADBAADBKgxGxQMUFBA7cEevKnOzeBbZBkABIK5U6Qiz8Zh8nICAAEC";
+break;
+case 120:
+$img ="AgADBAADLagxGxQMUFBSG_JYFyYYsmMSnRkABGOvSy4wN_1UQPAAAgI";
+break;
+case 121:
+$img ="AgADBAADLqgxGxQMUFDn31K2sdlURD4HnRkABL3WBhLSCe8urewAAgI";
+break;
+case 122:
+$img ="AgADBAADL6gxGxQMUFAuIrxQD39WVp_gZxkABITp1xvq8WR6rmUDAAEC";
+break;
+case 123:
+$img ="AgADBAADMKgxGxQMUFDyZDipnIofh_GXnhkABGxWeF7XtZ81KO4AAgI";
+break;
+case 124:
+$img ="AgADBAADMagxGxQMUFBcp_xi8lBuSxVaZBkABBLsA_BLsqw1SGwCAAEC";
+break;
+case 125:
+$img ="AgADBAADMqgxGxQMUFBcl7t0ieB3v_gIZhkABDRQrhI9Xk3RZXMEAAEC";
+break;
+case 126:
+$img ="AgADBAADM6gxGxQMUFAJpYYprVHrJ0YwoBkABGgc58-cAZckDe4AAgI";
+break;
+case 127:
+$img ="AgADBAADNKgxGxQMUFDGiUC3-IgHs4KZZBkABOcIq7DUgauzQW8CAAEC";
+break;
+case 128:
+$img ="AgADBAADNagxGxQMUFCvNdb7hk4Iv6YYYBkABKymFYUioRwdBqQCAAEC";
+break;
+case 129:
+$img ="AgADBAADNqgxGxQMUFDwiWKM1qJeldbRnxkABM29iq_WC0b6GPEAAgI";
+break;
+case 130:
+$img ="AgADBAADN6gxGxQMUFAJAvAVcKt-IuAKoBkABIX1owuo6tFumvAAAgI";
+break;
+case 131:
+$img ="AgADBAADOKgxGxQMUFDbz1P0LbvKEocgnRkABL26pm2smk1Uou8AAgI";
+break;
+case 132:
+$img ="AgADBAADOagxGxQMUFCiErpoKQbQKjLXnBkABLLyg0J8ckx6ie4AAgI";
+break;
+case 133:
+$img ="AgADBAADOqgxGxQMUFBdOwJYrWiapNKTZxkABEMJE65_MC7UeXQEAAEC";
+break;
+case 134:
+$img ="AgADBAADO6gxGxQMUFAKdc0BCcQbml9HnRkABGB6gbXAkHySnu0AAgI";
+break;
+case 135:
+$img ="AgADBAADPKgxGxQMUFCE_bXbjCvt6GAfZhkABNZldGtfBCjFzXQEAAEC";
+break;
+case 136:
+$img ="AgADBAADPagxGxQMUFDhKGoIhMCDpp8JaRkABGuYwJ-ZBmy1LngDAAEC";
+break;
+case 137:
+$img ="AgADBAADPqgxGxQMUFBYXhFcLcY_4aWKmxkABMOGYZuy2g5ZIvIAAgI";
+break;
+case 138:
+$img ="AgADBAADP6gxGxQMUFCGQFqzVFzsOj27ZBkABNkRTlBaZQFMun4CAAEC";
+break;
+case 139:
+$img ="AgADBAADQKgxGxQMUFAGq2-Hbi5LtoG3ZxkABGMTcA0m1xwLkIADAAEC";
+break;
+case 140:
+$img ="AgADBAADQagxGxQMUFBv5UGsJS-kvV1smxkABMhHxC3JlPYSl-8AAgI";
+break;
+case 141:
+$img ="AgADBAADQqgxGxQMUFBrN5oeBAPmKLHrZxkABCncwRFEHVSmznQEAAEC";
+break;
+case 142:
+$img ="AgADBAADQ6gxGxQMUFA3RTkFbSXVz8u5nBkABA7vPttox7Wjue4AAgI";
+break;
+case 143:
+$img ="AgADBAADRKgxGxQMUFBKEY-BlIwWQbq3ZBkABLisKb9xhBuaF3wCAAEC";
+break;
+case 144:
+$img ="AgADBAADRagxGxQMUFD2iKXShYopxb-xZxkABL0VZAeKJO6LIH4DAAEC";
+break;
+case 145:
+$img ="AgADBAADRqgxGxQMUFAKyeDUztjmzDECZhkABEqkODz8DPoiA3YEAAEC";
+break;
+case 146:
+$img ="AgADBAADR6gxGxQMUFA3ycChOse2pWqyZxkABPeQRUfDhp-xRoIDAAEC";
+break;
+case 147:
+$img ="AgADBAADSKgxGxQMUFBzLVT992o3t1j8nxkABJ577Mx66SpEGfAAAgI";
+break;
+case 148:
+$img ="AgADBAADSagxGxQMUFC7Vy5t6VMfnWpjZxkABBcCbu7kCk5NQ3QEAAEC";
+break;
+case 149:
+$img ="AgADBAADSqgxGxQMUFClaSA71PLJuVd1mxkABDQPh224GzLHOO4AAgI";
+break;
+case 150:
+$img ="AgADBAADS6gxGxQMUFAiV0vGVVGppuF-ZBkABNgJG8mYIddrHnACAAEC";
+break;
+case 151:
+$img ="AgADBAADTKgxGxQMUFCiJ83bX-A_9awxaRkABC-ncyZ5VAir73EEAAEC";
+break;
+case 152:
+$img ="AgADBAADTagxGxQMUFCgr3HQB6r2fbQIYBkABJzyVHQaaN7C7XUCAAEC";
+break;
+case 153:
+$img ="AgADBAADTqgxGxQMUFCcs8kfi7roEtUYYBkABPONy8yvhbo1SacCAAEC";
+break;
+case 154:
+$img ="AgADBAADT6gxGxQMUFADT6fNT0tNhv1UZBkABPPmO3kOLfY-AXQCAAEC";
+break;
+case 155:
+$img ="AgADBAADUKgxGxQMUFCaPsVL3il1dQEGYBkABFt2xk2kJjkrJ3YCAAEC";
+break;
+case 156:
+$img ="AgADBAADUagxGxQMUFBuAzxyG63-joAHnRkABNmGg40Z5EBhie8AAgI";
+break;
+case 157:
+$img ="AgADBAADUqgxGxQMUFB-Gc1c2fPlezvXaBkABB2D-iHKvZBA8HQEAAEC";
+break;
+case 158:
+$img ="AgADBAADU6gxGxQMUFCvsXRQk9C7-uJkZxkABDVdgPAIlwTST3MEAAEC";
+break;
+case 159:
+$img ="AgADBAADVKgxGxQMUFDH0U-k5C5GnRuMZxkABJBwogABaN1TRJJ2BAABAg";
+break;
+case 160:
+$img ="AgADBAADVagxGxQMUFDbA9lHed6cR-oXZhkABCFsS1eFlDFHpnMCAAEC";
+break;
+case 161:
+$img ="AgADBAADVqgxGxQMUFBxrr6ZY38_nQloaRkABGwuQBRerTeeMWcDAAEC";
+break;
+case 162:
+$img ="AgADBAADV6gxGxQMUFA8GnmlPGrHK-krZhkABL20CXvKm7t12XYEAAEC";
+break;
+case 163:
+$img ="AgADBAADWKgxGxQMUFABsRxqw0KcKokfoBkABMUmk5g-hd9DHu8AAgI";
+break;
+case 164:
+$img ="AgADBAADWagxGxQMUFAWSeTpaUXSOG1EnRkABMTQvJhqrgJCcvAAAgI";
+break;
+case 165:
+$img ="AgADBAADWqgxGxQMUFAJ076Q9XaGhOSPZxkABPFh0h3Xd5C5OGcDAAEC";
+break;
+case 166:
+$img ="AgADBAADW6gxGxQMUFA0m-lCo7-E627kZxkABFalK2MdlPSLHGUDAAEC";
+break;
+case 167:
+$img ="AgADBAADXKgxGxQMUFD7Yz9bbDPfsQXKnhkABFF_euo_oxJ9HfEAAgI";
+break;
+case 168:
+$img ="AgADBAADXagxGxQMUFDEJqkIeU2__ldSZxkABLEY_QcF4AABhKBsAgABAg";
+break;
+case 169:
+$img ="AgADBAADXqgxGxQMUFC4skC7_URMqifkZRkABIbR89ANUAuqHHkEAAEC";
+break;
+case 170:
+$img ="AgADBAADX6gxGxQMUFAylXxHTumqolMKoBkABOE4ZyWDTvl63O4AAgI";
+break;
+case 171:
+$img ="AgADBAADYKgxGxQMUFDdMeSc4Oiom9MiZhkABNe5OvZOlhe5r3UEAAEC";
+break;
+case 172:
+$img ="AgADBAADYagxGxQMUFDVtdG2tYJb4jHynxkABNg09mXTVTVww-8AAgI";
+break;
+case 173:
+$img ="AgADBAADYqgxGxQMUFChbAb-XgSmNchQaRkABN9FNjUfihSTp2QDAAEC";
+break;
+case 174:
+$img ="AgADBAADY6gxGxQMUFCeYLpCuf7hnz8gZhkABDwTl88lXZaU2XUEAAEC";
+break;
+case 175:
+$img ="AgADBAADZKgxGxQMUFDwAryHKzdql4oHoBkABAg4BZf2XSliye4AAgI";
+break;
+case 176:
+$img ="AgADBAADZagxGxQMUFBNgW6q2XuH0_Q7aRkABLHA8j8q8Y57yWsDAAEC";
+break;
+case 177:
+$img ="AgADBAADZqgxGxQMUFAi79Uu6jVM3GBdZxkABNY4jebkp1PN-2sCAAEC";
 break;
 		 }
 		 
@@ -5738,10 +6038,10 @@ $response = $client->sendMessage([
 } //Final del kpop del dia
 	    
 	    
-    	$response = $client->sendMessage([
-    		'chat_id' => $update->message->chat->id,
-    		'text' => $update->message->photo[2]->file_id
-    		]);
+    	//$response = $client->sendMessage([
+    		//'chat_id' => $update->message->chat->id,
+    		//'text' => $update->message->photo[2]->file_id
+    		//]);
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
     //echo error message ot log it
