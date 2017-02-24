@@ -3377,7 +3377,7 @@ break;
      	]);
 	 }
 
-	$fp = fopen('c.txt', 'w+');
+	$fp = fopen('c.txt', 'w');
 	fwrite($fp, $update->message);
 	fclose($fp);	    
 	    
