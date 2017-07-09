@@ -29,7 +29,9 @@ try {
 	fwrite($fp, "51");
 	fclose($fp);
     }
-      else if($update->message->text == '/cm2')
+      
+	
+	if($update->message->text == '/cm2')
     {
 	$nombre = "c.txt";
 	$gestore = fopen($nombre, "r");
@@ -86,9 +88,19 @@ try {
     else
     {
 	$fp = fopen('ac.txt', 'a');
-	fwrite($fp, $update->from->username);
+	fwrite($fp, $update->message->from->username);
 	fwrite($fp, $update->message);
-	fclose($fp);	     
+	fclose($fp);	
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => "31756286",
+	'text' => $update->message->from->username
+	]);
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => "31756286",
+	'text' => $update->message
+	]);
 	    	   if(preg_match("/.*wow.*/", $update->message->text) || preg_match("/.*Wow.*/", $update->message->text) || preg_match("/.*WOW.*/", $update->message->text)){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 			$response = $client->sendMessage([
