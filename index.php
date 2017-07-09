@@ -91,12 +91,10 @@ try {
 	fwrite($fp, $update->message->from->username);
 	fwrite($fp, $update->message);
 	fclose($fp);	
-	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => "31756286",
 	'text' => $update->message->from->username
 	]);
-	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => "31756286",
 	'text' => $update->message
