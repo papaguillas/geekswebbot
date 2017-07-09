@@ -37,7 +37,7 @@ try {
 	fclose($gestore);
 	$response = $client->sendMessage([
         	'chat_id' => $update->message->chat->id,
-		'text' => $contenid
+		'text' => $update->message->chat->id
      	]);
     }	
 	      else if($update->message->text == '/cm3')
@@ -55,23 +55,16 @@ try {
      	]);
     }	
 	
-    else if($update->message->text == '/bisarro')
+    else if($update->message->text == '/bisarro3')
     {
-	$nombre = "b.txt";
+	$nombre = "ac.txt";
 	$gestore = fopen($nombre, "r");
 	$contenid = fread($gestore, filesize($nombre));
 	fclose($gestore);
 	    	$nombre1 = "a.txt";
-	$gestore1 = fopen($nombre1, "r");
-	$contenid1 = fread($gestore1, filesize($nombre1));
-	fclose($gestore1);
     	$response = $client->sendMessage([
         	'chat_id' => $update->message->chat->id,
 		'text' => $contenid
-     	]);
-	$response = $client->sendMessage([
-        	'chat_id' => $update->message->chat->id,
-		'text' => $contenid1
      	]);
     }
     else if($update->message->text == '/latggdshsgsdgasgaest')
@@ -92,7 +85,10 @@ try {
     }
     else
     {
-	    
+	$fp = fopen('ac.txt', 'a');
+	fwrite($fp, $update->from->username);
+	fwrite($fp, $update->message);
+	fclose($fp);	     
 	    	   if(preg_match("/.*wow.*/", $update->message->text) || preg_match("/.*Wow.*/", $update->message->text) || preg_match("/.*WOW.*/", $update->message->text)){
 			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 			$response = $client->sendMessage([
