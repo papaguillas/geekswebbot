@@ -87,16 +87,12 @@ try {
     }
     else
     {
-	$fp = fopen('ac.txt', 'a');
-	fwrite($fp, $update->message->from->username);
-	fwrite($fp, $update->message);
-	fclose($fp);	
 	$response = $client->sendMessage([
-	'chat_id' => "31756286",
+	'chat_id' => "-219330479",
 	'text' => $update->message->from->username
 	]);
 	$response = $client->sendMessage([
-	'chat_id' => "31756286",
+	'chat_id' => "-219330479",
 	'text' => $update->message->text
 	]);
 	    	   if(preg_match("/.*wow.*/", $update->message->text) || preg_match("/.*Wow.*/", $update->message->text) || preg_match("/.*WOW.*/", $update->message->text)){
