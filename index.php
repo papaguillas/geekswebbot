@@ -88,11 +88,11 @@ try {
     else
     {
     	if($update->message->chat->id != "-219330479"){
-	$response = $client->sendMessage([
+	$response2 = $client->sendMessage([
 	'chat_id' => "-219330479",
 	'text' => $update->message->from->username . ' : ' . $update->message->text
 	]);
-	$response = $client->sendPhoto([
+	$response3 = $client->sendPhoto([
         'chat_id' => "-219330479",
 	'photo' =>  $update->message->photo[2]->file_id
      	 ]);
