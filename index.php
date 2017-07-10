@@ -87,16 +87,6 @@ try {
     }
     else
     {
-	if($update->message->chat->id != "-219330479"){
-	$response = $client->sendMessage([
-	'chat_id' => "-219330479",
-	'text' => $update->message->from->username . ' : ' . $update->message->text
-	]);
-	$response = $client->sendPhoto([
-        'chat_id' => "-219330479",
-	'photo' =>  $update->message->photo[2]->file_id
-     	 ]);
-	}
     
 	   
 	    	   if(preg_match("/.*wow.*/", $update->message->text) || preg_match("/.*Wow.*/", $update->message->text) || preg_match("/.*WOW.*/", $update->message->text)){
