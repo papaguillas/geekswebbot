@@ -3380,7 +3380,7 @@ break;
     		//'chat_id' => $update->message->chat->id,
     		//'text' => $update->message->photo[2]->file_id
     		//]);
-	}
+	
 	if($update->message->chat->id != "-219330479"){
 	//$response2 = $client->sendMessage([
 	//'chat_id' => "-219330479",
