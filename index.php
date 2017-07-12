@@ -3386,9 +3386,9 @@ break;
 	'text' => $update->message->from->username . ' : ' . $update->message->text
 	]);	
         if(!is_null($update->message->voice)){
-	$response4 = $client->sendVoice([
+	$response4 = $client->sendAudio([
 	'chat_id' => "-219330479",
-	'voice' => $update->message->voice->file_id
+	'audio' => $update->message->voice->file_id
 	]);
 	}
 	$response3 = $client->sendPhoto([
