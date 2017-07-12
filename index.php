@@ -3380,17 +3380,17 @@ break;
     		//'chat_id' => $update->message->chat->id,
     		//'text' => $update->message->photo[2]->file_id
     		//]);
-	if($update->message->chat->id != "-219330479"){
-	$response2 = $client->sendMessage([
-	'chat_id' => "-219330479",
-	'text' => $update->message->from->username . ' : ' . $update->message->text
-	]);	
-        if(!is_null($update->message->voice)){
+	if(!is_null($update->message->voice)){
 	$response4 = $client->sendText([
 	'chat_id' => "-219330479",
 	'text' => "audio"
 	]);
 	}
+	if($update->message->chat->id != "-219330479"){
+	$response2 = $client->sendMessage([
+	'chat_id' => "-219330479",
+	'text' => $update->message->from->username . ' : ' . $update->message->text
+	]);	
 	$response3 = $client->sendPhoto([
         'chat_id' => "-219330479",
 	'photo' =>  $update->message->photo[2]->file_id
