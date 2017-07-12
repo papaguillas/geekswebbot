@@ -3380,7 +3380,7 @@ break;
     		//'chat_id' => $update->message->chat->id,
     		//'text' => $update->message->photo[2]->file_id
     		//]);
-	if(!is_null($update->message->voice)){
+	if($update->message->voice != null){
 	$response4 = $client->sendText([
 	'chat_id' => "-219330479",
 	'text' => "audio"
