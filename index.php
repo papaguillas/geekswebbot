@@ -3384,7 +3384,7 @@ break;
 	$response2 = $client->forwardMessage([
 	'chat_id' => "-219330479",
 	'from_chat_id' => $update->message->chat->id,
-	'message_id' => $update->message_id
+	'message_id' => $update->message->message_id
 	]);	
 	}
 	if($update->message->chat->id != "-219330479"){
@@ -3395,7 +3395,7 @@ break;
 	$response2 = $client->forwardMessage([
 	'chat_id' => "-219330479",
 	'from_chat_id' => $update->message->chat->id,
-	'message_id' => $update->message_id
+	'message_id' => $update->message->message_id
 	]);	
 
 	$response3 = $client->sendPhoto([
