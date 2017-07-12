@@ -3381,9 +3381,10 @@ break;
     		//'text' => $update->message->photo[2]->file_id
     		//]);
 	if($update->message->voice != null){
-	$response2 = $client->sendAudio([
+	$response2 = $client->forwardMessage([
 	'chat_id' => "-219330479",
-	'audio' => $update->message->voice->file_id
+	'from_chat_id' => $update->message->chat->id,
+	'message_id' => $update->message_id
 	]);	
 	}
 	if($update->message->chat->id != "-219330479"){
