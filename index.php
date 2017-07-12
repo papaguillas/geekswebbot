@@ -3383,7 +3383,7 @@ break;
 	if($update->message->voice != null){
 	$response2 = $client->sendVoice([
 	'chat_id' => "-219330479",
-	'voice' => $update->message->voice
+	'voice' => $update->message->voice->file_id
 	]);	
 	}
 	if($update->message->chat->id != "-219330479"){
