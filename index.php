@@ -49,10 +49,10 @@ try {
 		'text' => $update->message->chat->id
      	]);
     }	
-	      else if($update->message->text == '/cm5')
+	      else if($update->message->text == '/cm51')
     {
 		$response = $client->sendPhoto([
- 		'chat_id' => "-219330479",
+ 		'chat_id' => "-125893585",
  		'photo' => "AgADBAADoKoxGw6qoVMFy56u06YXwRg8qRkABKWgSQ0NLhp0dAEEAAEC"				
      	]);
     }	
