@@ -51,9 +51,9 @@ try {
     }	
 	      else if($update->message->text == '/cm5')
     {
-	$response = $client->sendMessage([
-        	'chat_id' => "-144683816",
-		'text' => "Dejad de intentar que diga cosas graciosas, no soy un payaso, solo un kbot :("
+		$response = $client->sendPhoto([
+ 		'chat_id' => "-219330479",
+ 		'photo' => "AgADBAADoKoxGw6qoVMFy56u06YXwRg8qRkABKWgSQ0NLhp0dAEEAAEC"				
      	]);
     }	
 	
