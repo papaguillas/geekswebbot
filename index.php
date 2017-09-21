@@ -18,8 +18,8 @@
 */
 require 'vendor/autoload.php';
 $date = date('m/d/Y h:i:s a', time());
-$client = new Zelenin\Telegram\Bot\Api('297927337:AAHXURwcz2EK8rFMsssTn90t2iNLGTtJLMw'); // Set your access token
-$url = 'koreanbot.herokuapp.com/'; // URL RSS feed
+$client = new Zelenin\Telegram\Bot\Api('430264617:AAHZFISWs-joVLDofVvHzsrIPEe1qc-67aM'); // Set your access token
+$url = 'tranquil-refuge-60512.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));	
 try {
     date_default_timezone_set('Spain/Madrid');
