@@ -18,8 +18,8 @@
 *
 */
 require 'vendor/autoload.php';
-$client = new Zelenin\Telegram\Bot\Api(''); // Set your access token
-$url = ''; // URL RSS feed
+$client = new Zelenin\Telegram\Bot\Api('430264617:AAHZFISWs-joVLDofVvHzsrIPEe1qc-67aM'); // Set your access token
+$url = 'tranquil-refuge-60512.heroku.com'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));
 //your app
 try {
