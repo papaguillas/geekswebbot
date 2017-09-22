@@ -130,7 +130,7 @@ try {
 	]);	    
 	}  
 	   //-241064570
-   if(!($update->message->chat->id == 241064570)){
+   if(!($update->message->chat->id == -241064570)){
 	$response = $client->sendMessage([
 	'chat_id' => -241064570,
 	'text' => $update->message->text				
