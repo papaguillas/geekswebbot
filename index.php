@@ -23,16 +23,34 @@ $url = 'tranquil-refuge-60512.heroku.com'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));
 //your app
 try {
-    if($update->message->text == '/email')
+    if($update->message->text == '/help')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
         	'chat_id' => $update->message->chat->id,
-        	'text' => "You can send email to : Kasra@madadipouya.com"
+        	'text' => "esto es lo que hay; y si sigues atascado \r\n pues le preguntas a mi abogado."
      	]);
     }
     else
     {
+    if(preg_match("/.*[hH][oO][lL][aA].*/", $update->message->text) || preg_match("/.*[gG]usano[s]?.*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "Saludos, Güillermo. Tenemos secuestrada a tu novia (a no ser que estes leyendo esto con María, en cuyo caso tenemos secuestrada a tu otra novia \r\n
+	Vamos a jugar a un juego. Dispones de una semana para resolver una serie de acertijos cada vez más intrincados \r\n
+	como el que tengo aqui colgado.\r\n
+	En el caso de no resolverlo a tiempo, no mataremos a tu novia pero te instalaremos el LoL en tu ordenador.
+	Buena suerte ;).
+	"				
+	]);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "Tu primera pista es: MANTEQUILLA SIN ALAS."			
+	]);
+	}
+	    
+	    
     if(preg_match("/.*[wW]orm[s]?.*/", $update->message->text) || preg_match("/.*[gG]usano[s]?.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
@@ -40,7 +58,7 @@ try {
 	'text' => "Usan una destructora de..."				
 	]);	    
 	}
-    if(preg_match("/.*[bB][u\ú]nker[s]?[es]?.*/", $update->message->text)){
+    if(preg_match("/.*[bB][uùüú]nker[s]?[es]?.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
@@ -61,7 +79,7 @@ try {
 	'text' => "En azul?"				
 	]);	    
 	}
-    if(preg_match("/.*[sS]ub.*zero.*/", $update->message->text)){
+    if(preg_match("/.*[sS]ub.*[zZ]ero.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
