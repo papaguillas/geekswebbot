@@ -40,7 +40,7 @@ try {
 	'text' => "Usan una destructora de..."				
 	]);	    
 	}
-    if(preg_match("/.*[bB][uú]nker[s]?[es]?.*/", $update->message->text)){
+    if(preg_match("/.*[bB][u\ú]nker[s]?[es]?.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
@@ -103,7 +103,7 @@ try {
 	'text' => "Hay una que es sagrada"				
 	]);	    
 	}     
-   if(preg_match("/.*[hH]?[aA]l[l]?elu[yjl]+a[h]?  .*/", $update->message->text)){
+   if(preg_match("/.*[hH]?[aA]ll?elu[yjl]+a[h]?.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
