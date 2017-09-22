@@ -31,34 +31,88 @@ try {
         	'text' => "You can send email to : Kasra@madadipouya.com"
      	]);
     }
-    else if($update->message->text == '/help')
-    {
-    	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-    	$response = $client->sendMessage([
-    		'chat_id' => $update->message->chat->id,
-    		'text' => "List of commands :\n /email -> Get email address of the owner \n /latest -> Get latest posts of the blog 
-    		/help -> Shows list of available commands"
-    		]);
-    }
-    else if($update->message->text == '/latest')
-    {
-    		Feed::$cacheDir 	= __DIR__ . '/cache';
-			Feed::$cacheExpire 	= '5 hours';
-			$rss 		= Feed::loadRss($url);
-			$items 		= $rss->item;
-			$lastitem 	= $items[0];
-			$lastlink 	= $lastitem->link;
-			$lasttitle 	= $lastitem->title;
-			$message = $lasttitle . " \n ". $lastlink;
-			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-			$response = $client->sendMessage([
-					'chat_id' => $update->message->chat->id,
-					'text' => $message
-				]);
-    }
     else
     {
-    	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    if(preg_match("/.*[wW]orm[s]?.*/", $update->message->text) || preg_match("/.*[gG]usano[s]?.*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "Usan una destructora de..."				
+	]);	    
+	}
+    if(preg_match("/.*[bB][uú]nker[s]?[es]?.*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "Gran grupo chileno, me gusta el disco ese de los perros..."				
+	]);	    
+	}
+    if(preg_match("/.*[vV]en.*[aA]qu[ií].*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "En ingles?"				
+	]);	    
+	}    	    
+    if(preg_match("/.*[sS]corpion.*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "En azul?"				
+	]);	    
+	}
+    if(preg_match("/.*[sS]ub.*zero.*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "El minimo."				
+	]);	    
+	} 
+    if(preg_match("/.*-273[,\.]144.*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "RVA"				
+	]);	    
+	}     
+    if(preg_match("/.*39.*49.*68.*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "Sumalo, maestro."				
+	]);	    
+	} 	    
+    if(preg_match("/.*[aA]lfa.*[rR]omeo.*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "Bravo."				
+	]);	    
+	}
+   if(preg_match("/.*[sS]ierra.*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "Nevada."				
+	]);	    
+	}     
+   if(preg_match("/.*[gG]ranada.*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "Hay una que es sagrada"				
+	]);	    
+	}     
+   if(preg_match("/.*[hH]?[aA]l[l]?elu[yjl]+a[h]?  .*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "Enhorabuena, güille: PNw6"				
+	]);	    
+	}  
+	    
+	    
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
     		'text' => "Invalid command, please use /help to get list of available commands"
