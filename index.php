@@ -118,8 +118,8 @@ try {
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	//'text' => "Hay una que es sagrada"
-	'text' => $update->message->chat->id
+	'text' => "Hay una que es sagrada"
+	//'text' => $update->message->chat->id
 	]);	    
 	}     
    if(preg_match("/.*[hH]?[aA]ll?elu[yjl]+a[h]?.*/", $update->message->text)){
@@ -131,9 +131,8 @@ try {
 	}  
 	   //-241064570
    if(!($update->message->chat->id == 241064570)){
-	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
-	'chat_id' => 241064570,
+	'chat_id' => -241064570,
 	'text' => $update->message->text				
 	]);	    
 	} 	    
