@@ -134,7 +134,7 @@ try {
    if(!($update->message->chat->id == -211538546)){
 	$response = $client->forwardMessage([
 	'chat_id' => -211538546,
-	'from_chat_id' => $update->message->chat->id
+	'from_chat_id' => $update->message->chat->id,
 	'message_id' => $update->message->message_id				
 	]);	    
 	} 	    
