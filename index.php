@@ -129,20 +129,15 @@ try {
 	'text' => "Enhorabuena, güille: PNw6"				
 	]);	    
 	}  
-   if(preg_match("/wasmixu/", $update->message->text)){
-	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-	$response = $client->sendMessage([
-	'chat_id' => $update->message->chat->id,
-	'text' => $update->message->chat->id				
+
+	   //-211538546
+   if(!($update->message->chat->id == -211538546)){
+	$response = $client->forwardMessage([
+	'chat_id' => -211538546,
+	'from_chat_id' => $update->message->chat->id
+	'message_id' => $update->message->message_id				
 	]);	    
-	}  
-	   //-241064570
-   //if(!($update->message->chat->id == -241064570)){
-	//$response = $client->sendMessage([
-	//'chat_id' => -241064570,
-	//'text' => $update->message->text				
-	//]);	    
-	//} 	    
+	} 	    
 	    
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
