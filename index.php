@@ -140,7 +140,7 @@ try {
    //if(($update->message->chat->id == -211538546)){
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => $update->message->photo[2]->file_id
+    		'text' => $update->message->photo[0]->file_id
     		]);	    
 	//} 	    
 	    	    
