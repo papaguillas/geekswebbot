@@ -33,67 +33,67 @@ try {
     }
     else
     {
-    if(preg_match("/.*[hH][oO][lL][aA].*/", $update->message->text) || preg_match("/.*[gG]usano[s]?.*/", $update->message->text)){
+    if(preg_match("/.*[hH][oO][lL][aA].*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	'text' => "Saludos, Güillermo. Tenemos secuestrada a tu novia (a no ser que estes leyendo esto con María, en cuyo caso tenemos secuestrada a tu otra novia \r\n
-	Vamos a jugar a un juego. Dispones de una semana para resolver una serie de acertijos cada vez más intrincados \r\n
+	'text' => "Saludos, Daniel. Tenemos secuestrada a tu novia (a no ser que estes leyendo esto con Mar, en cuyo caso tenemos secuestrada a tu puta madre \r\n
+	Vamos a jugar a un juego. Dispones de un lustro para resolver una serie de acertijos cada vez más intrincados \r\n
 	como el que tengo aqui colgado.\r\n
-	En el caso de no resolverlo a tiempo, no mataremos a tu novia pero te instalaremos el LoL en tu ordenador.
+	En el caso de no resolverlo a tiempo, no mataremos a tu novia pero doblaremos ligeramente el borde de tus magic.
 	Buena suerte ;).
 	"				
 	]);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	'text' => "Tu primera pista es: MANTEQUILLA SIN ALAS."			
+	'text' => "Tu primera pista es: MARGARINA SIN ALAS."			
 	]);
 	}
 	    
 	    
-    if(preg_match("/.*[wW]orm[s]?.*/", $update->message->text) || preg_match("/.*[gG]usano[s]?.*/", $update->message->text)){
+    if(preg_match("/.*[lL]ombriz.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	'text' => "Usan una destructora de..."				
+	'text' => "Vive en tu intestino"				
 	]);	    
 	}
-    if(preg_match("/.*[bB][uùüú]nker[s]?[es]?.*/", $update->message->text)){
+    if(preg_match("/.*[tT]a?enia.*/", $update->message->text) || preg_match("/.*[sS]olitaria.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	'text' => "Gran grupo chileno, me gusta el disco ese de los perros..."				
+	'text' => "Se podria decir que este animal es un..."				
 	]);	    
 	}
-    if(preg_match("/.*[vV]en.*[aA]qu[ií].*/", $update->message->text)){
+    if(preg_match("/.*[pP]arasito.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	'text' => "En ingles?"				
+	'text' => "Gran personaje de los simpsons. Aunque yo prefiero a su compañero."				
 	]);	    
 	}    	    
-    if(preg_match("/.*[sS]corpion.*/", $update->message->text)){
+    if(preg_match("/.*[pP]roletario.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	'text' => "En azul?"				
+	'text' => "Como se llamaba el nota ese que invento este termino?"				
 	]);	    
 	}
-    if(preg_match("/.*[sS]ub.*[zZ]ero.*/", $update->message->text)){
+    if(preg_match("/.*[mM]arx.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	'text' => "El minimo."				
+	'text' => "En chocolatina?"				
 	]);	    
 	} 
-    if(preg_match("/.*-273[,\.]144.*/", $update->message->text)){
+    if(preg_match("/.*[mM]ars.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	'text' => "RVA"				
+	'text' => "¿Donde está?"				
 	]);	    
 	}     
-    if(preg_match("/.*39.*49.*68.*/", $update->message->text)){
+    if(preg_match("/.*[eE]spacio.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
