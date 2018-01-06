@@ -97,7 +97,7 @@ try {
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	'text' => "¿Ah si?."				
+	'text' => "¿Ah si?"				
 	]);	    
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
@@ -106,10 +106,10 @@ try {
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	'text' => "¿Sabes de que serie te hablo, verdad?."				
+	'text' => "¿Sabes de que serie te hablo, verdad?"				
 	]);	    
 	} 	    
-    if(preg_match("/.*[bB]ig[ ]?[bB]ang?.*/", $update->message->text) || preg_match("/.*[gG]rande[ ][bB]ango.*/", $update->message->text)){
+    if(preg_match("/.*[bB]ig[ ]?[bB]ang.*/", $update->message->text) || preg_match("/.*[gG]rande[ ][bB]ango.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
@@ -119,8 +119,7 @@ try {
 	$response = $client->sendPhoto([
 	'chat_id' => $update->message->chat->id,
 	'photo' => "AgADBAADVasxGzT_gFLU4Hz3n8Wn48dPiRoABArJslnii7l_zKAAAgI"				
-	]);    
-	}    
+	]);      
 	    	
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
