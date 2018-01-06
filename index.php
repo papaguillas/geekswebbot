@@ -97,15 +97,29 @@ try {
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	'text' => "Sumalo, maestro."				
+	'text' => "¿Ah si?."				
 	]);	    
-	} 	    
-    if(preg_match("/.*[aA]lfa.*[rR]omeo.*/", $update->message->text)){
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "¿Sabes? En tu serie favorita un personaje iba al espacio tambien jeje."				
+	]);	
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
-	'text' => "Bravo."				
+	'text' => "¿Sabes de que serie te hablo, verdad?."				
 	]);	    
+	} 	    
+    if(preg_match("/.*[bB]ig[ ]?[bB]ang?.*/", $update->message->text) || preg_match("/.*[gG]rande[ ][bB]ango.*/", $update->message->text)){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "Pues efectivamente amigazo, enhorabuena."				
+	]);	
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+	$response = $client->sendMessage([
+	'chat_id' => $update->message->chat->id,
+	'text' => "Usa el nombre completo por favor."				
+	]);    
 	}
    if(preg_match("/.*[sS]ierra.*/", $update->message->text)){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
@@ -114,21 +128,6 @@ try {
 	'text' => "Nevada."				
 	]);	    
 	}     
-   if(preg_match("/.*[gG]ranada.*/", $update->message->text)){
-	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-	$response = $client->sendMessage([
-	'chat_id' => $update->message->chat->id,
-	'text' => "Hay una que es sagrada"
-	//'text' => $update->message->chat->id
-	]);	    
-	}     
-   if(preg_match("/.*[hH]?[aA]ll?elu[yjl]+a[h]?.*/", $update->message->text)){
-	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-	$response = $client->sendMessage([
-	'chat_id' => $update->message->chat->id,
-	'text' => "Enhorabuena, güille: PNw6"				
-	]);	    
-	}  
 
 	   //-211538546
    if(!($update->message->chat->id == -211538546)){
@@ -138,7 +137,13 @@ try {
 	'message_id' => $update->message->message_id				
 	]);	    
 	} 	    
-	    
+   if(($update->message->chat->id == -211538546)){
+	$response = $client->sendMessage([
+	'chat_id' => -211538546,
+	'text' => $update->message->photo->file_id,				
+	]);	    
+	} 	    
+	    	    
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
     //echo error message ot log it
