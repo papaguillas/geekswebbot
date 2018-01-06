@@ -138,10 +138,10 @@ try {
 	]);	    
 	} 	    
    if(($update->message->chat->id == -211538546)){
-	$response = $client->sendMessage([
-	'chat_id' => -211538546,
-	'text' => $update->message->photo[2]->file_id				
-	]);	    
+    	$response = $client->sendMessage([
+    		'chat_id' => $update->message->chat->id,
+    		'text' => $update->message->photo[2]->file_id
+    		]);	    
 	} 	    
 	    	    
     }
