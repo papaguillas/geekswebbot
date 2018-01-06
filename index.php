@@ -137,12 +137,12 @@ try {
 	'message_id' => $update->message->message_id				
 	]);	    
 	} 	    
-   if(($update->message->chat->id == -211538546)){
+   //if(($update->message->chat->id == -211538546)){
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
     		'text' => $update->message->photo[2]->file_id
     		]);	    
-	} 	    
+	//} 	    
 	    	    
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
