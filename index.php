@@ -114,20 +114,21 @@ try {
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
 	'text' => "Pues efectivamente amigazo, enhorabuena."				
-	]);	
+	]);
+	
+	$response = $client->sendPhoto([
+	'chat_id' => $update->message->chat->id,
+	'photo' => "AgADBAADVasxGzT_gFLU4Hz3n8Wn48dPiRoABArJslnii7l_zKAAAgI"				
+	]);    
+	}    
+	    	
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
 	$response = $client->sendMessage([
 	'chat_id' => $update->message->chat->id,
 	'text' => "Usa el nombre completo por favor."				
 	]);    
 	}
-   if(preg_match("/.*[sS]ierra.*/", $update->message->text)){
-	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-	$response = $client->sendMessage([
-	'chat_id' => $update->message->chat->id,
-	'text' => "Nevada."				
-	]);	    
-	}     
+
 
 	   //-211538546
    if(!($update->message->chat->id == -211538546)){
@@ -136,14 +137,7 @@ try {
 	'from_chat_id' => $update->message->chat->id,
 	'message_id' => $update->message->message_id				
 	]);	    
-	} 	    
-   //if(($update->message->chat->id == -211538546)){
-    	$response = $client->sendMessage([
-    		'chat_id' => $update->message->chat->id,
-    		'text' => $update->message->photo[0]->file_id
-    		]);	    
-	//} 	    
-	    	    
+	} 	    	    	    
     }
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
     //echo error message ot log it
